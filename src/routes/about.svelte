@@ -7,6 +7,14 @@
     let contact = "images/About Page/Planets/Contact.png"
     let graphics = "images/About Page/Planets/Graphics.png"
     let websites = "images/About Page/Planets/Websites.png"
+    import Modal from "../Components/aboutModal.svelte";
+
+	let showModal = false;
+    let showModal2 = false;
+    let showModal3 = false;
+    let showModal4 = false;
+    let showModal5 = false;
+    let showModal6 = false;
 </script>
 
 <div id="aboutPage">
@@ -19,12 +27,36 @@
         </article>
         <article id="planets">
             <img id="planetsOrbit" src="{planetsOrbit}" alt="The planets orbiting the sun.">
-            <img id="about" src="{about}" alt="Floating planet that directs to about page.">
-            <img id="animation" src="{animation}" alt="Floating planet that directs to animation page.">
-            <img id="articles" src="{articles}" alt="Floating planet that directs to articles page.">
-            <img id="contact" src="{contact}" alt="Floating planet that directs to contact page.">
-            <img id="graphics" src="{graphics}" alt="Floating planet that directs to graphics page.">
-            <img id="websites" src="{websites}" alt="Floating planet that directs to websites page.">
+            <img id="about" class="float" src="{about}" on:click="{() => showModal = true}" alt="Floating planet that directs to about page.">
+            <img id="animation" class="float" src="{animation}" on:click="{() => showModal2 = true}" alt="Floating planet that directs to animation page.">
+            <img id="articles" class="float" src="{articles}" on:click="{() => showModal3 = true}" alt="Floating planet that directs to articles page.">
+            <img id="contact" class="float" src="{contact}" on:click="{() => showModal4 = true}" alt="Floating planet that directs to contact page.">
+            <img id="graphics" class="float" src="{graphics}" on:click="{() => showModal5 = true}" alt="Floating planet that directs to graphics page.">
+            <img id="websites" class="float" src="{websites}" on:click="{() => showModal6 = true}" alt="Floating planet that directs to websites page.">
+            <p id="aboutText">About</p>
+            <p id="animationText">Animation</p>
+            <p id="articlesText">Articles</p>
+            <p id="contactText">Contact</p>
+            <p id="graphicsText">Graphics</p>
+            <p id="websitesText">Websites</p>
+            {#if showModal}
+            <Modal on:close="{() => showModal = false}">Modal 1</Modal>
+            {/if}
+            {#if showModal2}
+            <Modal on:close="{() => showModal2 = false}">Modal 2</Modal>
+            {/if}
+            {#if showModal3}
+            <Modal on:close="{() => showModal3 = false}">Modal 3</Modal>
+            {/if}
+            {#if showModal4}
+            <Modal on:close="{() => showModal4 = false}">Modal 4</Modal>
+            {/if}
+            {#if showModal5}
+            <Modal on:close="{() => showModal5 = false}">Modal 5</Modal>
+            {/if}
+            {#if showModal6}
+            <Modal on:close="{() => showModal6 = false}">Modal 6</Modal>
+            {/if}
         </article>
     </section>
 </div>
@@ -59,30 +91,125 @@ section {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-items: center;
 }
 #planetsOrbit {
     width: 75%;
     z-index: 0;
     grid-column: 2 / 11;
+    grid-row: 1 / 11;
 }
 #about {
     z-index: 1;
     grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    animation-name: rise;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#aboutText {
+    z-index: 2;
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    transform: translateX(-50px);
 }
 #animation {
     z-index: 1;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    animation-name: rise;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+#animationText {
+    z-index: 2;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    transform: translateX(-90px);
 }
 #articles {
     z-index: 1;
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+    animation-name: rise;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+#articlesText {
+    z-index: 2;
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+    transform: translateX(-85px);
 }
 #contact {
     z-index: 1;
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    animation-name: rise;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#contactText {
+    z-index: 2;
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    transform: translateX(-60px) translateY(-10px);
 }
 #graphics {
     z-index: 1;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    animation-name: rise;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
 }
-#contact {
+#graphicsText {
+    z-index: 2;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    transform: translateX(-60px) translateY(-10px);
+}
+#websites {
     z-index: 1;
+    grid-column: 6 / 8;
+    grid-row: 3 / 4;
+    animation-name: rise;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+#websitesText {
+    z-index: 2;
+    grid-column: 6 / 8;
+    grid-row: 3 / 4;
+    transform: translateX(-55px) translateY(-30px);
+}
+#websites:hover, #graphics:hover, #contact:hover, #animation:hover, #articles:hover, #about:hover {
+    animation-name: float;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 </style>

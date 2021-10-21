@@ -1,7 +1,7 @@
 <script>
     let bgImage = "images/Home Page/Home Background.jpg";
     let bgImageMobile = "images/Home Page/Home Background Mobile.jpg"
-    let orbit = "images/Home Page/Orbit.png";
+    let orbit = "images/Home Page/Orbit_Animated.gif";
     let portrait = "images/Home Page/Portfolio Portrait.png";
     import Nav from "../Components/nav.svelte";
 </script>
