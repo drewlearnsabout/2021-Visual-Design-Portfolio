@@ -40,22 +40,74 @@
             <p id="graphicsText">Graphics</p>
             <p id="websitesText">Websites</p>
             {#if showModal}
-            <Modal on:close="{() => showModal = false}">Modal 1</Modal>
+            <Modal on:close="{() => showModal = false}">
+                <h2>
+                    About Andrew
+                </h2>
+                <p>
+                    I'm a native San Diegan and that got enchanted by the wilderness of Portland, OR.<br>
+                    I run on 2 cups of caffiene a day while balancing my design career, life, and a very<br>
+                    active, yet cuddly toddler.<br>
+                    <br>I have a goal of soaking in what I can from life, and to eventually teach my son<br>
+                    that there's so much out there in the world to be mindful of and explore.
+                </p>
+            </Modal>
             {/if}
             {#if showModal2}
-            <Modal on:close="{() => showModal2 = false}">Modal 2</Modal>
+            <Modal on:close="{() => showModal2 = false}">
+                <h2>Animations</h2>
+                <p>I take any opportunity to bring my designs to life.<br><br>
+                    I grew up on watching cartoons and how it was so captivating to watch images in motion.<br>
+                    I incorporate that same fascination into the characters I create and the emotions<br>
+                    they express.
+                </p>
+                <a href="/animations" class="links"><p>See Animations <span>&#8594;</span></p></a>
+            </Modal>
             {/if}
             {#if showModal3}
-            <Modal on:close="{() => showModal3 = false}">Modal 3</Modal>
+            <Modal on:close="{() => showModal3 = false}">
+                <h2>Articles</h2>
+                <p>
+                    I thoroughly explain my design decisions through evidence based research. This stems<br>
+                    from my experience in behavior analysis and the study of human behavior.  Empathy is<br>
+                    constantly talked about in UX design, and what better way to show my understanding<br>
+                    of how we as humans behave than by research, observation and intervention.
+                </p>
+                <a href="articles" class="links"><p>See Articles <span>&#8594;</span></p></a>
+            </Modal>
             {/if}
             {#if showModal4}
-            <Modal on:close="{() => showModal4 = false}">Modal 4</Modal>
+            <Modal on:close="{() => showModal4 = false}">
+                <h2>Contact</h2>
+                <p>I'm very happy to answer any questions that you may have.<br>
+                Feel free to contact me either by email or phone</p>
+                <a href="contact" class="links"><p>Contact Me <span>&#8594;</span></p></a>
+            </Modal>
             {/if}
             {#if showModal5}
-            <Modal on:close="{() => showModal5 = false}">Modal 5</Modal>
+            <Modal on:close="{() => showModal5 = false}">
+                <h2>Graphics</h2>
+                <p>As someone who has read a fair share of comics as a kid,<br>
+                I understand the importance of having visuals paired with the message.<br>
+                Visuals can make or break any medium, so researching what is appropriate<br>
+                for the occassion is important for me to convey to the audience.
+                </p>
+                <a href="/graphics" class="links"><p>Graphic Design <span>&#8594;</span></p></a>
+            </Modal>
             {/if}
             {#if showModal6}
-            <Modal on:close="{() => showModal6 = false}">Modal 6</Modal>
+            <Modal on:close="{() => showModal6 = false}">
+                <h2>Websites</h2>
+                <p>
+                    Web design is what started it all for my design career.  I started off by<br>
+                    learning to code as a hobby, and it eventually led me to strive for<br>
+                    the perfect layout.  My drive to get better as a designer and a developer was<br>
+                    due to how perfect I wanted the design to look.  My background in behavior analysis<br>
+                    also led me to design with practicality in mind, so that whoever used my websites would<br>
+                    easily be able to do so.
+                </p>
+                <a href="/websites" class="links"><p>See websites. <span>&#8594;</span></p></a>
+            </Modal>
             {/if}
         </article>
     </section>
@@ -79,6 +131,18 @@ h1, p {
 h1 {
     font-size: 2em;
     font-weight: normal;
+}
+h2 {
+    font-weight: normal;
+}
+.links {
+    text-decoration: none;
+    display: grid;
+    justify-items: right;
+}
+.links:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 section {
     display: grid;
