@@ -1,11 +1,11 @@
 <nav id="nav">
     <a href="/">Home</a>
     <a href="/about">About</a>
-    <a href="/Websites">Websites</a>
-    <a href="/Animation">Animation</a>
+    <a href="/websites">Websites</a>
+    <a href="/animations">Animation</a>
     <a href="/Graphics">Graphics</a>
     <a href="/Articles">Articles</a>
-    <a href="/Contact">Contact</a>
+    <a href="/contact">Contact</a>
 </nav>
 
 <style>
