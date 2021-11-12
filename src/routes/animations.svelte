@@ -1,24 +1,25 @@
 <script>
     import Nav from "../Components/nav.svelte";
     import Screen from "../Components/scrnblocks.svelte";
+    import Animations from "../Components/movingImg.svelte";
 </script>
 
 <section  id="animations">
     <Nav/>
     <section id="animationSection">
         <h1>Animations</h1>
-        <p>Scroll effect</p>
-        <Screen/>
-        <section>
-            <p>Image</p>
-            <br><br><br><br><br>
-            <p>Image</p>
-        </section>
-        <Screen/>
+        <div id="screenArea">
+            <Screen/>
+            <section>
+                <Animations/>
+            </section>
+            <Screen/>
+        </div>
     </section>
 </section>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
     #animations {
         display: grid;
         background-size: cover;
@@ -29,5 +30,15 @@
     }
     #animationSection {
         height: 100vh;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.5em;
+        color: white;
+    }
+    #animationSection h1 {
+        padding-left: 20px;
+    }
+    #screenArea {
+        background-color: rgb(24, 24, 24);
+        padding: 10px 0;
     }
 </style>

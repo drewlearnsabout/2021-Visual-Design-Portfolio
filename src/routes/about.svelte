@@ -81,7 +81,7 @@
                 <h2>Contact</h2>
                 <p>I'm very happy to answer any questions that you may have.<br>
                 Feel free to contact me either by email or phone</p>
-                <a href="contact" class="links"><p>Contact Me <span>&#8594;</span></p></a>
+                <a href="/contact" class="links"><p>Contact Me <span>&#8594;</span></p></a>
             </Modal>
             {/if}
             {#if showModal5}
