@@ -4,6 +4,7 @@
     let orbit = "images/Home Page/Orbit_Animated.gif";
     let portrait = "images/Home Page/Portfolio Portrait.png";
     import Nav from "../Components/nav.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
 <div style="background-image: url('{bgImage}')" id="homePage">
@@ -17,6 +18,7 @@
         <img id="portrait" src="{portrait}" alt="Andrew standing on a bent tree">
     </section>
 </div>
+<Landscape/>
 
 
 <style>
@@ -62,6 +64,17 @@
         grid-column: 3 / 5;
         grid-row: 2 / 5;
         z-index: 1;
+    }
+    @media (orientation: landscape) {
+        #homePage {
+            display: grid;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #homePage {
+            display: none;
+        }
     }
 
     

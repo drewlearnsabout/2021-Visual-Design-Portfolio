@@ -3,6 +3,7 @@
     let poof = "images/Contact Page/Rectangle 29.png";
     import Nav from "../Components/nav.svelte";
     import Modal from "../Components/aboutModal.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 
     let planeModal = false;
 </script>
@@ -29,6 +30,7 @@
         {/if}
     </section>
 </section>
+<Landscape/>
 
 <style>
 #contactPage {
@@ -151,4 +153,15 @@ label, #submit {
         opacity: 0;
     }
 }
+@media (orientation: landscape) {
+        #contactPage {
+            display: grid;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #contactPage {
+            display: none;
+        }
+    }
 </style>
