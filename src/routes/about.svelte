@@ -78,9 +78,8 @@
             {/if}
             {#if showModal4}
             <Modal on:close="{() => showModal4 = false}">
-                <h2>Contact</h2>
-                <p>I'm very happy to answer any questions that you may have.<br>
-                Feel free to contact me either by email or phone</p>
+                <h2>Contact Me!</h2>
+                <p>I will happily answer any questions that you may have!</p>
                 <a href="/contact" class="links"><p>Contact Me <span>&#8594;</span></p></a>
             </Modal>
             {/if}
@@ -97,14 +96,17 @@
             {/if}
             {#if showModal6}
             <Modal on:close="{() => showModal6 = false}">
-                <h2>Websites</h2>
+                <h2>Websites I've designed, developed, and maintain</h2>
                 <p>
-                    Web design is what started it all for my design career.  I started off by<br>
-                    learning to code as a hobby, and it eventually led me to strive for<br>
-                    the perfect layout.  My drive to get better as a designer and a developer was<br>
-                    due to how perfect I wanted the design to look.  My background in behavior analysis<br>
-                    also led me to design with practicality in mind, so that whoever used my websites would<br>
-                    easily be able to do so.
+                    What started off as a hobby became my career.<br><br>
+                    My wife told me my first website I made looked retro, like geocities retro.<br>
+                    I was still proud of that project at the time, but I took that queue and strove to have better designs.
+                    Over the course of a few years, I've learned new programming languages, improved my understanding of
+                    modern design, incorporated principles of UI and UX into my workflow, and eventually transitioned into
+                    a media and tech lead for a nonprofit to design, develop and maintain websites this org owns.
+                    <br><br>
+                    Please browse through the websites that I have worked tirelessly on, and at this moment it's the best that
+                    I can do, however I'm always striving to get better.
                 </p>
                 <a href="/websites" class="links"><p>See websites. <span>&#8594;</span></p></a>
             </Modal>
