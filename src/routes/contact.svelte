@@ -30,7 +30,7 @@
         {/if}
     </section>
 </section>
-<Landscape/>
+<div id="landscape"><Landscape/></div>
 
 <style>
 #contactPage {
@@ -157,11 +157,17 @@ label, #submit {
         #contactPage {
             display: grid;
         }
+        #landscape {
+            display: none;
+        }
     }
 
     @media (orientation: portrait) {
         #contactPage {
             display: none;
+        }
+        #landscape {
+            display: initial;
         }
     }
 </style>

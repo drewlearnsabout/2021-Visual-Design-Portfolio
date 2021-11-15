@@ -4,6 +4,7 @@
     import Ma from "../Components/martialArts.svelte";
     import Impact from "../Components/impact.svelte";
     import Ink from "../Components/ink.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
 <div id="websites">
@@ -16,6 +17,7 @@
         <Ink/>
     </section>
 </div>
+<div id="landscape"><Landscape/></div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
@@ -36,6 +38,23 @@
         font-weight: normal;
         font-size: 3em;
         transform: translateX(30px);
+    }
+    @media (orientation: landscape) {
+        #websites {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #websites {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
     }
 
 </style>

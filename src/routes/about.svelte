@@ -8,6 +8,7 @@
     let graphics = "images/About Page/Planets/Graphics.png"
     let websites = "images/About Page/Planets/Websites.png"
     import Modal from "../Components/aboutModal.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 
 	let showModal = false;
     let showModal2 = false;
@@ -114,6 +115,7 @@
         </article>
     </section>
 </div>
+<div id="landscape"><Landscape/></div>
 
 
 <style>
@@ -278,4 +280,21 @@ section {
         transform: translateY(0px);
     }
 }
+@media (orientation: landscape) {
+        #aboutPage {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #aboutPage {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
+    }
 </style>

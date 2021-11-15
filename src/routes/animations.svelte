@@ -2,6 +2,7 @@
     import Nav from "../Components/nav.svelte";
     import Screen from "../Components/scrnblocks.svelte";
     import Animations from "../Components/movingImg.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
 <section  id="animations">
@@ -17,6 +18,7 @@
         </div>
     </section>
 </section>
+<div id="landscape"><Landscape/></div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
@@ -40,5 +42,22 @@
     #screenArea {
         background-color: rgb(24, 24, 24);
         padding: 10px 0;
+    }
+    @media (orientation: landscape) {
+        #animations {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #animations {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
     }
 </style>

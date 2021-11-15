@@ -18,7 +18,7 @@
         <img id="portrait" src="{portrait}" alt="Andrew standing on a bent tree">
     </section>
 </div>
-<Landscape/>
+<div id="landscape"><Landscape/></div>
 
 
 <style>
@@ -69,11 +69,17 @@
         #homePage {
             display: grid;
         }
+        #landscape {
+            display: none;
+        }
     }
 
     @media (orientation: portrait) {
         #homePage {
             display: none;
+        }
+        #landscape {
+            display: initial;
         }
     }
 
