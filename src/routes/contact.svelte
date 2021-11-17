@@ -19,12 +19,12 @@
         {#if planeModal}
         <Modal on:close="{() => planeModal = false}">
             <h2 id="modalH2">How can I help you?</h2>
-            <form id="formModalId" class="formModalClass" method="POST" netlify>
+            <form id="formModalId" class="formModalClass" name="form" data-netlify="true" method="POST" netlify>
               <label>Name<br><input class="formInput" id="nameBox" type="text" name="Name"></label>
               <label>E-mail<br><input class="formInput" id="emailBox" type="email" name="Email"></label>
               <label>Telephone<br><input class="formInput" id="numberBox" type="text" name="number"></label>
               <label>What would you like to work on?<br><textarea id="textBox" type="text" name="Message"></textarea></label>
-              <input id="submit" type="submit">
+              <button id="submit" type="submit">Send it.</button>
             </form>
         </Modal>
         {/if}
@@ -101,6 +101,16 @@
     justify-content: center;
     row-gap: 10px;
 }
+#formModalId button {
+    width: 70%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 label, #submit {
     grid-column: 2 / 3;
     width: 100%;
@@ -168,6 +178,11 @@ label, #submit {
         }
         #landscape {
             display: initial;
+        }
+    }
+    @media only screen and (max-width: 750px) {
+        #contactPage p {
+            font-size: 1em;
         }
     }
 </style>

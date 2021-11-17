@@ -3,8 +3,8 @@
     <a href="/about">About</a>
     <a href="/websites">Websites</a>
     <a href="/animations">Animation</a>
-    <a href="/Graphics">Graphics</a>
-    <a href="/Articles">Articles</a>
+    <a href="/Graphics" id="graphics">Graphics</a>
+    <a href="/Articles" id="articles">Articles</a>
     <a href="/contact">Contact</a>
 </nav>
 
@@ -30,6 +30,9 @@
         animation-name: spazz;
         animation-duration: 0.3s;
     }
+    #graphics, #articles {
+        display: none;
+    }
 
     @keyframes spazz {
         0% {
@@ -43,6 +46,8 @@
         }
     }
     @media only screen and (max-width: 675px) {
-        
+        nav {
+            font-size: 0.7em; 
+        }
     }
 </style>

@@ -60,4 +60,16 @@
     box-shadow: 0 2px 15px 0 white;
     background: rgba(255, 255, 255, 0.205);
     }
+    @media only screen and (max-width: 850px) {
+      #maBanner {
+        grid-template-rows: 20% 20% 23% 10% 20%;
+        background-size: cover;
+      }
+      #maLogo {
+        width: 20em;
+      }
+      #maBanner a {
+        width: 25%;
+      }
+  }
   </style>

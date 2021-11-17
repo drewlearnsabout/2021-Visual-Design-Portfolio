@@ -59,4 +59,16 @@
     box-shadow: 0 2px 15px 0 white;
     background: rgba(255, 255, 255, 0.205);
     }
+    @media only screen and (max-width: 850px) {
+      #inkBanner {
+        grid-template-rows: 10% 39% 25% 10% 10%;
+        background-size: cover;
+      }
+      #inkLogo {
+        width: 16em;
+      }
+      #inkBanner a {
+        width: 25%;
+      }
+  }
   </style>

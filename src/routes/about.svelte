@@ -34,12 +34,12 @@
             <img id="contact" class="float" src="{contact}" on:click="{() => showModal4 = true}" alt="Floating planet that directs to contact page.">
             <img id="graphics" class="float" src="{graphics}" on:click="{() => showModal5 = true}" alt="Floating planet that directs to graphics page.">
             <img id="websites" class="float" src="{websites}" on:click="{() => showModal6 = true}" alt="Floating planet that directs to websites page.">
-            <p id="aboutText">About</p>
-            <p id="animationText">Animation</p>
-            <p id="articlesText">Articles</p>
-            <p id="contactText">Contact</p>
-            <p id="graphicsText">Graphics</p>
-            <p id="websitesText">Websites</p>
+            <p id="aboutText" class="text">About</p>
+            <p id="animationText" class="text">Animation</p>
+            <p id="articlesText" class="text">Articles</p>
+            <p id="contactText" class="text">Contact</p>
+            <p id="graphicsText" class="text">Graphics</p>
+            <p id="websitesText" class="text">Websites</p>
             {#if showModal}
             <Modal on:close="{() => showModal = false}">
                 <h2>
@@ -226,7 +226,7 @@ section {
 }
 #graphics {
     z-index: 1;
-    grid-column: 4 / 6;
+    grid-column: 5 / 6;
     grid-row: 1 / 2;
     animation-name: rise;
     animation-duration: 1.7s;
@@ -234,13 +234,13 @@ section {
 }
 #graphicsText {
     z-index: 2;
-    grid-column: 4 / 6;
+    grid-column: 5 / 6;
     grid-row: 1 / 2;
     transform: translateX(-60px) translateY(-10px);
 }
 #websites {
     z-index: 1;
-    grid-column: 6 / 8;
+    grid-column: 7 / 8;
     grid-row: 3 / 4;
     animation-name: rise;
     animation-duration: 1.2s;
@@ -248,7 +248,7 @@ section {
 }
 #websitesText {
     z-index: 2;
-    grid-column: 6 / 8;
+    grid-column: 7 / 8;
     grid-row: 3 / 4;
     transform: translateX(-55px) translateY(-30px);
 }
@@ -295,6 +295,52 @@ section {
         }
         #landscape {
             display: initial;
+        }
+    }
+    @media only screen and (max-width: 850px) {
+        #description {
+            display: grid;
+            grid-template-rows: 30% 5%;
+        }
+        #description h1 {
+            font-size: 1.5em;
+        }
+        #description p {
+            font-size: 0.8em;
+        }
+        .float {
+            width: 60%;
+            justify-self: left;
+        }
+        .text {
+            font-size: 0.8em;
+            justify-self: right;
+        }
+        #aboutText {
+            grid-column: 6 / 7;
+        }
+        #animationText {
+            grid-column: 3 / 4;
+        }
+        #articlesText {
+            grid-column: 5 / 6;
+        }
+        #websitesText {
+            grid-column: 7 / 8;
+        }
+    }
+    @media only screen and (max-width: 667px) {
+        #animationText {
+            grid-column: 4 / 5;
+        }
+        #articlesText {
+            grid-column: 6 / 7;
+        }
+        #websitesText {
+            grid-column: 8 / 9;
+        }
+        #aboutText {
+            grid-column: 6 / 7;
         }
     }
 </style>

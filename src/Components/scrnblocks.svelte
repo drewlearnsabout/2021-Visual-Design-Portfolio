@@ -26,6 +26,12 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
+    @media only screen and (max-width: 850px) {
+        .square {
+            height: 30px;
+            width: 25px;
+        }
+    }
     #blocks {
         display: grid;
         grid-template-columns: repeat(15, 80px);

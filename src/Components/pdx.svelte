@@ -60,4 +60,16 @@
     box-shadow: 0 2px 15px 0 white;
     background: rgba(255, 255, 255, 0.205);
   }
+  @media only screen and (max-width: 850px) {
+    #pdxBanner {
+      grid-template-rows: 20% 12% 25% 10% 25%;
+      background-size: cover;
+    }
+    #pdxLogo {
+      width: 20em;
+    }
+    #pdxBanner a {
+        width: 25%;
+      }
+  }
 </style>

@@ -82,6 +82,34 @@
             display: initial;
         }
     }
+    @media only screen and (max-width: 850px) {
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        img {
+            width: 60%;
+        }
+        #orbit {
+            transform: translateX(50%);
+        }
+}
+@media only screen and (max-width: 650px) {
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.1em;
+        }
+        img {
+            width: 60%;
+        }
+        #orbit {
+            transform: translateX(50%);
+        }
+}
 
     
 </style>
