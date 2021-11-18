@@ -26,7 +26,7 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 850px) and (max-height: 500px) {
         .square {
             height: 30px;
             width: 25px;

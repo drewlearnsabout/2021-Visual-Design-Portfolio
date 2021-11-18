@@ -60,7 +60,7 @@
     box-shadow: 0 2px 15px 0 white;
     background: rgba(255, 255, 255, 0.205);
   }
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 850px) and (max-height: 500px) {
       #impactBanner {
         grid-template-rows: 20% 27% 22% 10% 20%;
         background-size: cover;

@@ -56,7 +56,7 @@
             display: initial;
         }
     }
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 850px) and (max-height: 500px) {
         h1 {
             font-size: 2em;
         }

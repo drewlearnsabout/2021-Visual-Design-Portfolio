@@ -23,8 +23,9 @@
     <section>
         <article id="description">
             <h1>I like space.</h1>
-            <p>Learning about space and the universe has shaped the way that I see and live my life.   One day I’d like to
-                teach my son about how we are small but are part of a bigger picture, and that one day he can set his sights to reach for the stars.</p>
+            <p>Learning about space and the universe has shaped the way that I see and live my life.<br>
+            Feel free to explore each planet (not the sun, that's a little too hot to handle) to learn a little more about me.
+            </p>
         </article>
         <article id="planets">
             <img id="planetsOrbit" src="{planetsOrbit}" alt="The planets orbiting the sun.">
@@ -46,21 +47,23 @@
                     About Andrew
                 </h2>
                 <p>
-                    I'm a native San Diegan and that got enchanted by the wilderness of Portland, OR.<br>
+                    I'm a native San Diegan that got enchanted by the trees and the coffee of Portland, OR.<br>
                     I run on 2 cups of caffiene a day while balancing my design career, life, and a very<br>
                     active, yet cuddly toddler.<br>
                     <br>I have a goal of soaking in what I can from life, and to eventually teach my son<br>
-                    that there's so much out there in the world to be mindful of and explore.
+                    that there's so much out there in the world to explore.
                 </p>
             </Modal>
             {/if}
             {#if showModal2}
             <Modal on:close="{() => showModal2 = false}">
                 <h2>Animations</h2>
-                <p>I take any opportunity to bring my designs to life.<br><br>
-                    I grew up on watching cartoons and how it was so captivating to watch images in motion.<br>
+                <p>Things that move are always more interesting to look at.<br><br>
+                    I grew up watching cartoons and playing a lot video games. I saw how captivating it was to watch images in motion and
+                    animation done like in Avatar the Last AirBender, Naruto, and Cowboy Bebop has inspired me to try my hand at it.<br><br> 
                     I incorporate that same fascination into the characters I create and the emotions<br>
-                    they express.
+                    they express, and even though I have a lot to learn, I'm looking forward to the 
+                    next one I make.
                 </p>
                 <a href="/animations" class="links"><p>See Animations <span>&#8594;</span></p></a>
             </Modal>
@@ -69,10 +72,11 @@
             <Modal on:close="{() => showModal3 = false}">
                 <h2>Articles</h2>
                 <p>
-                    I thoroughly explain my design decisions through evidence based research. This stems<br>
-                    from my experience in behavior analysis and the study of human behavior.  Empathy is<br>
-                    constantly talked about in UX design, and what better way to show my understanding<br>
-                    of how we as humans behave than by research, observation and intervention.
+                    My design decisions are based on what others will do when they interact with it.<br> 
+                    This stems from my experience as behavior analyst and technician and the research teams I was part of<br>
+                    studying mental health.<br>
+                    Empathy is constantly talked about in UX design, and what better way to show my understanding<br>
+                    of how we as humans feel and interact with the world than by research and observation through my designs.
                 </p>
                 <a href="articles" class="links"><p>See Articles <span>&#8594;</span></p></a>
             </Modal>
@@ -87,7 +91,7 @@
             {#if showModal5}
             <Modal on:close="{() => showModal5 = false}">
                 <h2>Graphics</h2>
-                <p>As someone who has read a fair share of comics as a kid,<br>
+                <p>As someone who preferred reading comics as a kid,<br>
                 I understand the importance of having visuals paired with the message.<br>
                 Visuals can make or break any medium, so researching what is appropriate<br>
                 for the occassion is important for me to convey to the audience.
@@ -297,7 +301,10 @@ section {
             display: initial;
         }
     }
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 850px) and (max-height: 500px) {
+        #animation, #articles {
+            width: 120%;
+        }
         #description {
             display: grid;
             grid-template-rows: 30% 5%;

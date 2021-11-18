@@ -60,9 +60,7 @@
             display: initial;
         }
     }
-    @media only screen and (max-width: 850px) {
-        #screenArea {
-        padding: 8px 0;
-    }
+    @media only screen and (max-width: 850px) and (max-height: 500px) {
+
     }
 </style>

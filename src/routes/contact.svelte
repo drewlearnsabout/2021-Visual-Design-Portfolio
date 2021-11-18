@@ -180,7 +180,7 @@ label, #submit {
             display: initial;
         }
     }
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 850px) and (max-height: 500px) {
         #contactPage p {
             font-size: 1em;
         }
