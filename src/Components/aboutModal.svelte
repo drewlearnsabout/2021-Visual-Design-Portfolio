@@ -75,7 +75,7 @@
 		padding: 1em;
 		border-radius: 0.5em;
 		color: white;
-		background: #737373;
+		background: #383838;
 		z-index: 3;
 	}
 
