@@ -3,7 +3,7 @@
     <a href="/about">About</a>
     <a href="/websites">Websites</a>
     <a href="/animations">Animation</a>
-    <a href="/Graphics" id="graphics">Graphics</a>
+    <a href="/graphics">Graphics</a>
     <a href="/Articles" id="articles">Articles</a>
     <a href="/contact">Contact</a>
 </nav>
@@ -30,7 +30,7 @@
         animation-name: spazz;
         animation-duration: 0.3s;
     }
-    #graphics, #articles {
+    #articles {
         display: none;
     }
 

@@ -10,7 +10,7 @@
 <div id="websites">
     <Nav/>
     <section id="websiteSections">
-        <h1>Website Design</h1>
+        <h1>WEBSITE DESIGN</h1>
         <Pdx/>
         <Ma/>
         <Impact/>
@@ -33,12 +33,33 @@
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    h1 {
+    #websiteSections h1 {
         color: white;
         font-weight: normal;
-        font-size: 3em;
-        transform: translateX(30px);
+        font-size: 2em;
+        padding: 0 10%;
+        text-align: center;
     }
+    /* Scroll Bar */
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888; 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+        }
     @media (orientation: landscape) {
         #websites {
             display: grid;

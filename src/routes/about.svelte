@@ -22,7 +22,7 @@
     <Nav/>
     <section>
         <article id="description">
-            <h1>I like space.</h1>
+            <h1>I LIKE SPACE</h1>
             <p>Learning about space and the universe has shaped the way that I see and live my life.<br>
             Feel free to explore each planet (not the sun, that's a little too hot to handle) to learn a little more about me.
             </p>
@@ -73,9 +73,9 @@
                 <h2>Articles</h2>
                 <p>
                     My design decisions are based on what others will do when they interact with it.<br> 
-                    This stems from my experience as behavior analyst and technician and the research teams I was part of<br>
-                    studying mental health.<br>
-                    Empathy is constantly talked about in UX design, and what better way to show my understanding<br>
+                    This stems from my experience as behavior analyst and technician and the research teams I was part of studying mental health.
+                    <br><br>
+                    Empathy is constantly talked about in UX design, and what better way to show my understanding
                     of how we as humans feel and interact with the world than by research and observation through my designs.
                 </p>
                 <a href="articles" class="links"><p>See Articles <span>&#8594;</span></p></a>
@@ -91,10 +91,14 @@
             {#if showModal5}
             <Modal on:close="{() => showModal5 = false}">
                 <h2>Graphics</h2>
-                <p>As someone who preferred reading comics as a kid,<br>
-                I understand the importance of having visuals paired with the message.<br>
-                Visuals can make or break any medium, so researching what is appropriate<br>
-                for the occassion is important for me to convey to the audience.
+                <p>As someone who preferred reading comics as a kid,
+                I took in and understood more of any material that was paired with a visual.<br><br>
+                Although I can conceptualize more clearly now as I'm much older, I still appreciate
+                having visuals to guide me through my experiences.  I can even see it on my own 2 year old's face
+                whenever we read through any of his picture books, and you can tell how much he enjoys
+                all of the color, landscapes and entities that fill each page.<br><br>
+                Visuals can make or break any experience, and so I take the time to understand
+                what encaptures who the audience is in each of my projects.
                 </p>
                 <a href="/graphics" class="links"><p>Graphic Design <span>&#8594;</span></p></a>
             </Modal>
@@ -135,6 +139,7 @@
 h1, p {
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
+    text-align: center;
 }
 h1 {
     font-size: 2em;

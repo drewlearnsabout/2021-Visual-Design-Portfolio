@@ -8,7 +8,7 @@
 <section  id="animations">
     <Nav/>
     <section id="animationSection">
-        <h1>Animations</h1>
+        <h1>ANIMATIONS</h1>
         <div id="screenArea">
             <Screen/>
             <section>
@@ -33,11 +33,13 @@
     #animationSection {
         height: 100vh;
         font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 1.5em;
         color: white;
     }
     #animationSection h1 {
-        padding-left: 20px;
+        padding: 0 10%;
+        font-weight: normal;
+        font-size: 2em;
+        text-align: center;
     }
     #screenArea {
         background-color: rgb(24, 24, 24);

@@ -10,24 +10,27 @@
 
 <section id="contactPage">
     <Nav/>
-    <section id="contactSection">
-        <img id="plane" src="{airplane}" on:click="{() => planeModal = true}" alt="Paper airplane">
-        <img id="poof" src="{poof}" alt="puff cloud behind a paper airplane">
-        <img id="poof2" src="{poof}" alt="puff cloud behind a paper airplane">
-        <img id="poof3" src="{poof}" alt="puff cloud behind a paper airplane">
-        <p>Click the plane to contact me.</p>
-        {#if planeModal}
-        <Modal on:close="{() => planeModal = false}">
-            <h2 id="modalH2">How can I help you?</h2>
-            <form id="formModalId" class="formModalClass" name="form" data-netlify="true" method="POST" netlify>
-              <label>Name<br><input class="formInput" id="nameBox" type="text" name="Name"></label>
-              <label>E-mail<br><input class="formInput" id="emailBox" type="email" name="Email"></label>
-              <label>Telephone<br><input class="formInput" id="numberBox" type="text" name="number"></label>
-              <label>What would you like to work on?<br><textarea id="textBox" type="text" name="Message"></textarea></label>
-              <button id="submit" type="submit">Send it.</button>
-            </form>
-        </Modal>
-        {/if}
+    <section id="contactMain">
+        <h1>CONTACT</h1>
+        <section id="contactSection">
+            <img id="plane" src="{airplane}" on:click="{() => planeModal = true}" alt="Paper airplane">
+            <img id="poof" src="{poof}" alt="puff cloud behind a paper airplane">
+            <img id="poof2" src="{poof}" alt="puff cloud behind a paper airplane">
+            <img id="poof3" src="{poof}" alt="puff cloud behind a paper airplane">
+            <p>Click the plane to contact me.</p>
+            {#if planeModal}
+            <Modal on:close="{() => planeModal = false}">
+                <h2 id="modalH2">How can I help you?</h2>
+                <form id="formModalId" class="formModalClass" name="form" data-netlify="true" method="POST" netlify>
+                <label>Name<br><input class="formInput" id="nameBox" type="text" name="Name"></label>
+                <label>E-mail<br><input class="formInput" id="emailBox" type="email" name="Email"></label>
+                <label>Telephone<br><input class="formInput" id="numberBox" type="text" name="number"></label>
+                <label>What would you like to work on?<br><textarea id="textBox" type="text" name="Message"></textarea></label>
+                <button id="submit" type="submit">Send it.</button>
+                </form>
+            </Modal>
+            {/if}
+        </section>
     </section>
 </section>
 <div id="landscape"><Landscape/></div>
@@ -35,11 +38,22 @@
 <style>
 #contactPage {
     display: grid;
-        background-size: cover;
-        background: #353535;
-        height: 100vh;
-        grid-template-columns: 15% 85%;
-        font-family: 'PT Sans Narrow', sans-serif;
+    background-size: cover;
+    background: #353535;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+#contactMain {
+    display: grid;
+    grid-template-rows: 10% 80%;
+}
+#contactMain h1 {
+    text-align: center;
+    padding: 0 10%;
+    font-size: 2em;
+    font-weight: normal;
+    color: white;
 }
 #contactSection {
     display: grid;
