@@ -17,10 +17,14 @@
             <img id="poof" src="{poof}" alt="puff cloud behind a paper airplane">
             <img id="poof2" src="{poof}" alt="puff cloud behind a paper airplane">
             <img id="poof3" src="{poof}" alt="puff cloud behind a paper airplane">
-            <p>Click the plane to contact me.</p>
+            <p>Click the plane for contact info.</p>
             {#if planeModal}
             <Modal on:close="{() => planeModal = false}">
-                <h2 id="modalH2">How can I help you?</h2>
+                <h2 id="modalH2">How to reach me</h2>
+                <p>Email: andrew.carbungco@gmail.com</p>
+                <p>Phone: 619-540-0607</p>
+                
+                <!--
                 <form id="formModalId" class="formModalClass" name="form" data-netlify="true" method="POST" netlify>
                 <label>Name<br><input class="formInput" id="nameBox" type="text" name="Name"></label>
                 <label>E-mail<br><input class="formInput" id="emailBox" type="email" name="Email"></label>
@@ -28,6 +32,7 @@
                 <label>What would you like to work on?<br><textarea id="textBox" type="text" name="Message"></textarea></label>
                 <button id="submit" type="submit">Send it.</button>
                 </form>
+                -->
             </Modal>
             {/if}
         </section>
@@ -108,6 +113,7 @@
     animation-iteration-count: infinite;
     grid-column: 5 / 6;
 }
+/*
 #formModalId {
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
@@ -129,6 +135,7 @@ label, #submit {
     grid-column: 2 / 3;
     width: 100%;
 }
+*/
 
 @keyframes float {
     0% {
@@ -136,15 +143,15 @@ label, #submit {
         animation-timing-function: ease-in-out;
     }
     14.3% {
-        transform: translateY(-20%) skewX(-15deg) rotate(10deg);
+        transform: translateY(-20%) skewX(-15deg) rotate(10deg) scale(0.7);
         animation-timing-function: ease-in-out;
     }
     35.75% {
-        transform: translateY(20%) skewX(15deg) rotate(-10deg);
+        transform: translateY(20%) skewX(15deg) rotate(-10deg) scale(1);
         animation-timing-function: ease-in-out;
     }
     57.2% {
-        transform: translateY(5%);
+        transform: translateY(5%) scale(1);
         animation-timing-function: ease-in-out;
     }
     71.5% {

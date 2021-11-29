@@ -139,6 +139,9 @@
 h1, p {
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
+
+}
+#description h1, #description p {
     text-align: center;
 }
 h1 {

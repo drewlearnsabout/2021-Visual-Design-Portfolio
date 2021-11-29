@@ -2,6 +2,7 @@
     let bgImage = "images/Graphics Page/grid.png";
     import Nav from "../Components/nav.svelte";
     import Thumbnails from "../Components/Graphics Components/graphicsThumbnails.svelte";
+    import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
 <section style="background-image: url('{bgImage}')" id="graphicsPage">
@@ -10,6 +11,7 @@
         <Thumbnails/>
     </section>
 </section>
+<div id="landscape"><Landscape/></div>
 
 <style>
         #graphicsPage {
@@ -43,5 +45,23 @@
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
         background: #555; 
+        }
+
+        @media (orientation: landscape) {
+            #graphicsPage {
+                display: grid;
+            }
+            #landscape {
+                display: none;
+            }
+        }
+
+        @media (orientation: portrait) {
+            #graphicsPage {
+                display: none;
+            }
+            #landscape {
+                display: initial;
+            }
         }
 </style>
