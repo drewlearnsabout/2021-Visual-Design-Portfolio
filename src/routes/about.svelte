@@ -132,7 +132,7 @@
 #aboutPage {
     display: grid;
     background-size: cover;
-    background: #4B4B4B;
+    background: #222634;
     height: 100%;
     grid-template-columns: 15% 85%;
 }

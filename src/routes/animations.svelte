@@ -25,7 +25,7 @@
     #animations {
         display: grid;
         background-size: cover;
-        background: #353535;
+        background: #222634;
         height: 100vh;
         grid-template-columns: 15% 85%;
         font-family: 'PT Sans Narrow', sans-serif;

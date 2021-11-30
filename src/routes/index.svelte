@@ -1,6 +1,5 @@
 <script>
-    let bgImage = "images/Home Page/Home Background.jpg";
-    let bgImageMobile = "images/Home Page/Home Background Mobile.jpg"
+    let bgImage = "images/Home Page/Space Background.png";
     let orbit = "images/Home Page/Orbit_Animated.gif";
     let portrait = "images/Home Page/Portfolio Portrait.png";
     import Nav from "../Components/nav.svelte";
@@ -16,6 +15,7 @@
             <img id="orbit" src="{orbit}" alt="The Earth Orbiting the Sun.">
         </div>
         <img id="portrait" src="{portrait}" alt="Andrew standing on a bent tree">
+        <section id="initialBackground"></section>
     </section>
 </div>
 <div id="landscape"><Landscape/></div>
@@ -24,9 +24,19 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+    #initialBackground {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #222634;
+        animation-name: backgroundFade;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
     #homePage {
         display: grid;
         background-size: cover;
+        background-color: #222634;
         height: 100%;
         grid-template-columns: 15% 85%;
     }
@@ -53,17 +63,40 @@
         grid-template-rows: 73% 63% 33%;
         z-index: 2;
     }
+    #name h1 {
+        opacity: 0;
+        animation-name: fadeLeft;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.6s;
+    }
+    #name h2 {
+        opacity: 0;
+        animation-name: fadeLeft;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.7s;
+    }
     img {
         width: 60%;
     }
     #orbit {
         color: white;
-        transform: translateX(30%);
+        transform: translateX(30%) scale(0);
+        animation-name: fadeRight, fadeRight2;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.8s;
     }
     #portrait {
         grid-column: 3 / 5;
         grid-row: 2 / 5;
         z-index: 1;
+        transform: scale(0);
+        animation-name: stretchUp;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
     }
     @media (orientation: landscape) {
         #homePage {
@@ -93,7 +126,19 @@
             width: 60%;
         }
         #orbit {
-            transform: translateX(50%);
+            transform: translateX(50%) scale(0);
+        }
+        @keyframes stretchUp3 {
+            0% {
+                transform: scaleX(0) translateX(50%);
+                
+            }
+            80% {
+                transform: scaleX(1.1) translateX(50%);
+            }
+            100% {
+                transform: scaleX(1) translateX(50%);
+            }
         }
 }
 @media only screen and (max-width: 650px) {
@@ -107,8 +152,59 @@
             width: 60%;
         }
         #orbit {
-            transform: translateX(50%);
+            transform: translateX(50%) scale(0);
         }
+        @keyframes stretchUp3 {
+            0% {
+                transform: scaleX(0) translateX(50%);
+                
+            }
+            80% {
+                transform: scaleX(1.1) translateX(50%);
+            }
+            100% {
+                transform: scaleX(1) translateX(50%);
+            }
+        }
+}
+@keyframes backgroundFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes stretchUp {
+    0% {
+        transform: scaleX(0);
+    }
+    80% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeRight {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+        
+    }
+    100% {
+        transform: translateX(30%);
+    }
 }
 
     
