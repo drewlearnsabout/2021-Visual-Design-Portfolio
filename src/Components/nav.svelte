@@ -24,11 +24,13 @@
     nav a {
         color: white;
         text-decoration: none;
+        cursor: url("images/Circle Cursor.png"), auto;
     }
     nav a:hover {
         text-decoration: underline;
         animation-name: spazz;
         animation-duration: 0.3s;
+        cursor: url("images/Circle Cursor.png"), auto;
     }
     #articles {
         display: none;

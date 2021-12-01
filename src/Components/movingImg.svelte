@@ -9,18 +9,19 @@
     let mainPg = "images/Animations/Main-Page-Animation-Ver-2.gif";
     let peerPrgm = "images/Animations/Peer-Program-Icon.gif";
     let whatImpact = "images/Animations/What-is-Impact-Banner.gif";
+
 </script>
 <section id="scrollLeft">
-    <img id="bxOne" src="{bxOne}" alt="">
-    <img id="bxTwo" src="{bxTwo}" alt="">
-    <img id="contact" src="{contact}" alt="">
-    <img id="decProb" src="{decProb}" alt="">
-    <img id="improvAttn" src="{improvAttn}" alt="">
-    <img id="increaseLng" src="{increaseLng}" alt="">
-    <img id="edge" src="{edge}" alt="">
-    <img id="mainPg" src="{mainPg}" alt="">
-    <img id="peerPrgm" src="{peerPrgm}" alt="">
-    <img id="whatImpact" src="{whatImpact}" alt="">
+    <img id="bxOne" class="play pause" src="{bxOne}" alt="">
+    <img id="bxTwo" class="play pause" src="{bxTwo}" alt="">
+    <img id="contact" class="play pause" src="{contact}" alt="">
+    <img id="decProb" class="play pause" src="{decProb}" alt="">
+    <img id="improvAttn" class="play pause" src="{improvAttn}" alt="">
+    <img id="increaseLng" class="play pause" src="{increaseLng}" alt="">
+    <img id="edge" class="play pause" src="{edge}" alt="">
+    <img id="mainPg" class="play pause" src="{mainPg}" alt="">
+    <img id="peerPrgm" class="play pause" src="{peerPrgm}" alt="">
+    <img id="whatImpact" class="play pause" src="{whatImpact}" alt="">
 </section>
 
 <style>

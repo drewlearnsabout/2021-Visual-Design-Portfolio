@@ -17,11 +17,12 @@
         #graphicsPage {
             display: grid;
             height: 100vh;
-            background: #4B4B4B;
+            background: #222634;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: right;
             grid-template-columns: 15% 85%;
+            cursor: url("images/Circle Cursor.png"), auto;
         }
         #graphicsSection {
             overflow-y: scroll;

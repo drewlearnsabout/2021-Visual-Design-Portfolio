@@ -1,6 +1,6 @@
 <script>
     import Nav from "../Components/nav.svelte";
-    let planetsOrbit = "images/About Page/Planetary Orbit.png";
+    let planetsOrbit = "images/About Page/Rings.png";
     let about = "images/About Page/Planets/About.png"
     let animation = "images/About Page/Planets/Animation.png"
     let articles = "images/About Page/Planets/Articles.png"
@@ -135,6 +135,7 @@
     background: #222634;
     height: 100%;
     grid-template-columns: 15% 85%;
+    cursor: url("images/Circle Cursor.png"), auto;
 }
 h1, p {
     font-family: 'PT Sans Narrow', sans-serif;

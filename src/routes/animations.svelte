@@ -22,6 +22,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
     #animations {
         display: grid;
         background-size: cover;
@@ -29,6 +30,7 @@
         height: 100vh;
         grid-template-columns: 15% 85%;
         font-family: 'PT Sans Narrow', sans-serif;
+        cursor: url("images/Circle Cursor.png"), auto;
     }
     #animationSection {
         height: 100vh;

@@ -39,6 +39,7 @@
         background-color: #222634;
         height: 100%;
         grid-template-columns: 15% 85%;
+        cursor: url("images/Circle Cursor.png"), auto;
     }
     section {
         font-family: 'PT Sans Narrow', sans-serif;
