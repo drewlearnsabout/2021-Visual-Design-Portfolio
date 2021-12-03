@@ -1,7 +1,7 @@
 <script>
     let bgImage = "images/Home Page/Space Background.png";
     let orbit = "images/Home Page/Orbit_Animated.gif";
-    let portrait = "images/Home Page/Portfolio Portrait.png";
+    let portrait = "images/Home Page/Astronaut Suit.png";
     import Nav from "../Components/nav.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 </script>
@@ -9,6 +9,11 @@
 <div style="background-image: url('{bgImage}')" id="homePage">
     <Nav/>
     <section>
+        <div class="stars" id="starOne"></div>
+        <div class="stars" id="starTwo"></div>
+        <div class="stars" id="starThree"></div>
+        <div class="stars" id="starFour"></div>
+        <div class="stars" id="starFive"></div>
         <div id="name">
             <h1>Andrew Carbungco</h1>
             <h2>Visual Designer</h2>
@@ -69,14 +74,14 @@
         animation-name: fadeLeft;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
-        animation-delay: 2.6s;
+        animation-delay: 2.2s;
     }
     #name h2 {
         opacity: 0;
         animation-name: fadeLeft;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
-        animation-delay: 2.7s;
+        animation-delay: 2.3s;
     }
     img {
         width: 60%;
@@ -87,17 +92,61 @@
         animation-name: fadeRight, fadeRight2;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
-        animation-delay: 2.8s;
+        animation-delay: 2.4s;
     }
     #portrait {
         grid-column: 3 / 5;
         grid-row: 2 / 5;
         z-index: 1;
-        transform: scale(0);
+        opacity: 0;
         animation-name: stretchUp;
-        animation-duration: 0.3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
-        animation-delay: 2s;
+        animation-delay: 1.6s;
+    }
+    .stars {
+        position: fixed;
+        opacity: 0;
+        background-color: rgb(211, 211, 211);
+        height: 0.7%;
+        width: 0.4%;
+        border-radius: 4px;
+        
+        animation-iteration-count: infinite;
+    }
+    #starOne {
+        top: 20%;
+        left: 80%;
+        animation-name: starFall;
+        animation-duration: 1s;
+    }
+    #starTwo {
+        top: 17%;
+        left: 70%;
+        animation-name: starFall2;
+        animation-delay: 0.5s;
+        animation-duration: 1.2s;
+    }
+    #starThree {
+        top: 24%;
+        left: 90%;
+        animation-name: starFall3;
+        animation-delay: 0.2s;
+        animation-duration: 0.8s;
+    }
+    #starFour {
+        top: 16%;
+        left: 65%;
+        animation-name: starFall4;
+        animation-delay: 0.7s;
+        animation-duration: 1.4s;
+    }
+    #starFive {
+        top: 22%;
+        left: 95%;
+        animation-name: starFall5;
+        animation-delay: 1s;
+        animation-duration: 0.6s;
     }
     @media (orientation: landscape) {
         #homePage {
@@ -178,13 +227,13 @@
 }
 @keyframes stretchUp {
     0% {
-        transform: scaleX(0);
+        opacity: 0;
     }
     80% {
-        transform: scaleX(1.1);
+        opacity: 1;
     }
     100% {
-        transform: scaleX(1);
+        opacity: 1;
     }
 }
 @keyframes fadeLeft {
@@ -207,6 +256,95 @@
         transform: translateX(30%);
     }
 }
-
+@keyframes starFall {
+    0% {
+        opacity: 0;
+        top: 20%;
+        left: 80%;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        top: 70%;
+        left: 40%;
+    }
+}
+@keyframes starFall2 {
+    0% {
+        opacity: 0;
+        top: 17%;
+        left: 70%;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        top: 50%;
+        left: 40%;
+    }
+}
+@keyframes starFall3 {
+    0% {
+        opacity: 0;
+        top: 24%;
+        left: 90%;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        top: 78%;
+        left: 35%;
+    }
+}
+@keyframes starFall4 {
+    0% {
+        opacity: 0;
+        top: 16%;
+        left: 65%;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        top: 80%;
+        left: 48%;
+    }
+}
+@keyframes starFall5 {
+    0% {
+        opacity: 0;
+        top: 22%;
+        left: 95%;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        top: 60%;
+        left: 5%;
+    }
+}
     
 </style>
