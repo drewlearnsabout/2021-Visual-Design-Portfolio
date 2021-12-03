@@ -1,9 +1,9 @@
 <script>
-    let bxOne = "images/Animations/Behavior Issues 1.gif";
+    let bxOne = "images/Animations/Ink-Process-Step-3.gif";
     let bxTwo = "images/Animations/Behavior Issues 2.gif";
     let contact = "images/Animations/Contact.gif";
     let decProb = "images/Animations/Decreased Problem Bxs.gif";
-    let improvAttn = "images/Animations/Improved Attn.gif";
+    let improvAttn = "images/Animations/Ink-Process-Step-5.gif";
     let increaseLng = "images/Animations/Increased Language.gif";
     let edge = "images/Animations/Edge Banner.gif";
     let mainPg = "images/Animations/Main-Page-Animation-Ver-2.gif";

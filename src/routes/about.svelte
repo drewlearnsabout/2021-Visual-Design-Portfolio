@@ -22,7 +22,7 @@
     <Nav/>
     <section>
         <article id="description">
-            <h1>I LIKE SPACE</h1>
+            <h1>I LIKE SPACE. SERIOUSLY.</h1>
             <p>Learning about space and the universe has shaped the way that I see and live my life.<br>
             Feel free to explore each planet (not the sun, that's a little too hot to handle) to learn a little more about me.
             </p>

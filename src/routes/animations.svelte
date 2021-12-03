@@ -8,7 +8,7 @@
 <section  id="animations">
     <Nav/>
     <section id="animationSection">
-        <h1>ANIMATIONS</h1>
+        <h1>ICON ANIMATIONS</h1>
         <div id="screenArea">
             <Screen/>
             <section>
