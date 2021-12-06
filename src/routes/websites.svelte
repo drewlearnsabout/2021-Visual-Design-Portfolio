@@ -8,6 +8,9 @@
 </script>
 
 <div id="websites">
+    <a href="/animations" id="nextPage">
+        Next Page >
+    </a>
     <Nav/>
     <section id="websiteSections">
         <h1>WEBSITE DESIGN</h1>
@@ -21,6 +24,19 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+    #nextPage {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+    }
+    #nextPage:hover {
+        text-decoration: underline;
+    }
     #websites {
     display: grid;
     background-size: cover;

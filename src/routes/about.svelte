@@ -21,6 +21,9 @@
 <div id="aboutPage">
     <Nav/>
     <section>
+        <a href="/websites" id="nextPage">
+            Next Page >
+        </a>
         <article id="description">
             <h1>I LIKE SPACE. SERIOUSLY.</h1>
             <p>Learning about space and the universe has shaped the way that I see and live my life.<br>
@@ -128,7 +131,18 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-
+#nextPage {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+    }
+#nextPage:hover {
+    text-decoration: underline;
+}
 #aboutPage {
     display: grid;
     background-size: cover;

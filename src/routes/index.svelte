@@ -22,13 +22,27 @@
         <img id="portrait" src="{portrait}" alt="Andrew standing on a bent tree">
         <section id="initialBackground"></section>
     </section>
+    <a href="/about" id="nextPage">
+        Next Page >
+    </a>
 </div>
 <div id="landscape"><Landscape/></div>
 
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-
+    #nextPage {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+    }
+    #nextPage:hover {
+        text-decoration: underline;
+    }
     #initialBackground {
         position: fixed;
         width: 100%;

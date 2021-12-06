@@ -6,6 +6,9 @@
 </script>
 
 <section style="background-image: url('{bgImage}')" id="graphicsPage">
+    <a href="/contact" id="nextPage">
+        Next Page >
+    </a>
     <nav><Nav/></nav>
     <section id="graphicsSection">
         <Thumbnails/>
@@ -14,6 +17,18 @@
 <div id="landscape"><Landscape/></div>
 
 <style>
+    #nextPage {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    top: 75%;
+    left: 85%;
+    text-decoration: none;
+    }
+    #nextPage:hover {
+        text-decoration: underline;
+    }
         #graphicsPage {
             display: grid;
             height: 100vh;

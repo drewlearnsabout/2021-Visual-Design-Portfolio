@@ -6,6 +6,9 @@
 </script>
 
 <section  id="animations">
+    <a href="/graphics" id="nextPage">
+        Next Page >
+    </a>
     <Nav/>
     <section id="animationSection">
         <h1>ICON ANIMATIONS</h1>
@@ -22,7 +25,18 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-
+    #nextPage {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+    }
+    #nextPage:hover {
+        text-decoration: underline;
+    }
     #animations {
         display: grid;
         background-size: cover;
