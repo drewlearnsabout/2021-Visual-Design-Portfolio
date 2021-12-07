@@ -5,9 +5,10 @@
   
   <div style="background-image: url('{maBanner}')" id="maBanner">
     <img src="{maLogo}" id="maLogo" alt="Aim High Martial Arts logo">
-    <p>Primary goal of website: Design layouts for each page and 
-      provide consultation on how content is organized to improve 
-      aesthetics and user experience. </p>
+    <p>Primary goal of website: Increase the traffic to site by revamping and periodically revising design elements.
+      <br>
+      Tools Used: Figma, Illustrator, Dimension, Photoshop, HTML, CSS, Javascript, Squarespace
+    </p>
     <a href="https://www.aimhighma.org/" target="_blank"><button>VISIT SITE</button></a>
   </div>
   
@@ -62,7 +63,7 @@
     }
     @media only screen and (max-width: 850px) and (max-height: 500px) {
       #maBanner {
-        grid-template-rows: 20% 20% 23% 10% 20%;
+        grid-template-rows: 20% 25% 40% 10% 20%;
         background-size: cover;
       }
       #maLogo {

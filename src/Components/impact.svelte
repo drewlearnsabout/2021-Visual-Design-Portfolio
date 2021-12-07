@@ -5,9 +5,10 @@
   
   <div style="background-image: url('{impactBanner}')" id="impactBanner">
     <img src="{impactLogo}" id="impactLogo" alt="Aim High Impact logo">
-    <p>Primary goal of website: Design layouts for each page and 
-      provide consultation on how content is organized to improve 
-      aesthetics and user experience. </p>
+    <p>Primary goal of website: Increase the amount of job applicants and clientele by redesigning elements throughout the website.
+      <br>
+      Tools Used: Figma, Illustrator, Dimension, Photoshop, Animate, HTML, CSS, Javascript, Squarespace
+    </p>
     <a href="https://www.aimhighimpact.org/"><button>VISIT SITE</button></a>
   </div>
   
@@ -62,7 +63,7 @@
   }
   @media only screen and (max-width: 850px) and (max-height: 500px) {
       #impactBanner {
-        grid-template-rows: 20% 27% 22% 10% 20%;
+        grid-template-rows: 20% 30% 47% 10% 20%;
         background-size: cover;
       }
       #impactLogo {

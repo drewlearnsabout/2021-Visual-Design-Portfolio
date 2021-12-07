@@ -20,6 +20,11 @@
     let homework = "images/Graphics Page/Homework tablet.png";
     let manual = "images/Graphics Page/MA Manual.png";
     let Woodbreak = "images/Graphics Page/Woodbreak.png";
+    let veterans = "images/Graphics Page/Veterans Post.png";
+    let maInk = "images/Graphics Page/MA Ink Post.png";
+    let ascent = "images/Graphics Page/Ascent Post.png";
+    let riseUp = "images/Graphics Page/Rising Up Logo.png";
+    let events = "images/Graphics Page/Events Logo.png";
 </script>
 
 <section id="graphicsSection">
@@ -59,6 +64,20 @@
                 <img class="threeDClass secondThree" src="{homework}" alt="Homework Icon">
                 <img class="threeDClass thirdThree" src="{manual}" alt="Manual Icon">
                 <img class="threeDClass fourthThree" src="{Woodbreak}" alt="Boardbreaking Icon">
+            </div>
+        </section>
+        <section id="socialMedia">
+            <h2>Social Media and misc. Posts</h2>
+            <div id="socialMediaGrid">
+                <div class="socialOne">
+                    <img src="{veterans}" alt="social media post for veteran's day">
+                    <img src="{maInk}" alt="Aim High Martial Arts and Ink's banner that showcases screen printed shorts">
+                </div>
+                <div class="socialTwo">
+                    <img src="{ascent}"  alt="Display of new toys that children can play with then they are at the clinic">
+                    <img src="{riseUp}" id="riseUp" alt="Banner component for a display dedicated to arewards system for Aim High employees">
+                </div>    
+                <img src="{events}" class="socialThree" alt="Aim High Events Banner, Thanksgiving themed">
             </div>
         </section>
     </section>
@@ -156,5 +175,38 @@
         .fourthThree {
             grid-column: 3 / 4;
             width: 50%;
+        }
+        /* Social Media Grid */
+        #socialMediaGrid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-rows: repeat(3, 0.5fr);
+            justify-items: center;
+            row-gap: 3vh;
+        }
+        .socialOne {
+            grid-column: 2 / 4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5%;
+            justify-content: center;
+        }
+        .socialOne img {
+            width: 90%;
+        }
+        .socialTwo {
+            grid-column: 2 / 4;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .socialTwo img {
+            width: 90%;
+        }
+        #riseUp {
+            background-color: rgb(255, 255, 255);
+        }
+        .socialThree {
+            grid-column: 2 / 4;
+            width: 90%;
         }
 </style>

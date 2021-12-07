@@ -5,9 +5,10 @@
 
 <div style="background-image: url('{pdxBanner}')" id="pdxBanner">
   <img src="{pdxLogo}" id="pdxLogo" alt="Aim High PDX logo">
-  <p>Primary goal of website: Design layouts for each page and 
-    provide consultation on how content is organized to improve 
-    aesthetics and user experience. </p>
+  <p>Primary goal of website: Increase the local community traffic to site by creating a non-profit company's website.
+    <br>
+    Tools Used: Figma, Illustrator, Dimension, Animate, Photoshop, HTML, CSS, Javascript, Squarespace
+  </p>
   <a href="https://www.aimhighpdx.org/" target="_blank"><button>VISIT SITE</button></a>
 </div>
 
@@ -62,7 +63,7 @@
   }
   @media only screen and (max-width: 850px) and (max-height: 500px) {
     #pdxBanner {
-      grid-template-rows: 20% 12% 25% 10% 25%;
+      grid-template-rows: 20% 12% 40% 10% 25%;
       background-size: cover;
     }
     #pdxLogo {

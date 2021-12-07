@@ -58,7 +58,7 @@
         text-align: center;
     }
     #screenArea {
-        background-color: rgb(24, 24, 24);
+        background-color: rgb(29, 21, 3);
         padding: 10px 0;
     }
     @media (orientation: landscape) {

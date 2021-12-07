@@ -5,9 +5,10 @@
   
   <div style="background-image: url('{inkBanner}')" id="inkBanner">
     <img src="{inkLogo}" id="inkLogo" alt="Aim High Ink logo">
-    <p>Primary goal of website: Design layouts for each page and 
-      provide consultation on how content is organized to improve 
-      aesthetics and user experience. </p>
+    <p>Primary goal of website: Increase traffic towards site primarily for service inquiries by designing revamped and new components throughout site.
+      <br>
+      Tools Used: Figma, Illustrator, Photoshop, Animate, HTML, CSS, Javascript, Squarespace
+    </p>
     <a href="https://www.aimhighink.org/" target="_blank"><button>VISIT SITE</button></a>
   </div>
   
@@ -61,7 +62,7 @@
     }
     @media only screen and (max-width: 850px) and (max-height: 500px) {
       #inkBanner {
-        grid-template-rows: 10% 39% 25% 10% 10%;
+        grid-template-rows: 10% 45% 40% 10% 10%;
         background-size: cover;
       }
       #inkLogo {
