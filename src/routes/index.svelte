@@ -1,14 +1,12 @@
 <script>
     let bgImage = "images/Home Page/Space Background.png";
-    let orbit = "images/Home Page/Orbit_Animated.gif";
-    let portrait = "images/Home Page/Astronaut Suit.png";
     import Nav from "../Components/nav.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
 <div style="background-image: url('{bgImage}')" id="homePage">
     <Nav/>
-    <section>
+    <section id="main">
         <div class="stars" id="starOne"></div>
         <div class="stars" id="starTwo"></div>
         <div class="stars" id="starThree"></div>
@@ -17,9 +15,8 @@
         <div id="name">
             <h1>Andrew Carbungco</h1>
             <h2>Visual Designer</h2>
-            <img id="orbit" src="{orbit}" alt="The Earth Orbiting the Sun.">
+            
         </div>
-        <img id="portrait" src="{portrait}" alt="Andrew standing on a bent tree">
         <section id="initialBackground"></section>
     </section>
     <a href="/about" id="nextPage">
@@ -30,9 +27,9 @@
 
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
     #nextPage {
-        font-family: 'PT Sans Narrow', sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1.2em;
         color: white;
         position: fixed;
@@ -60,30 +57,33 @@
         grid-template-columns: 15% 85%;
         cursor: url("images/Circle Cursor.png"), auto;
     }
-    section {
-        font-family: 'PT Sans Narrow', sans-serif;
+    #main {
         color: white;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
         grid-template-rows: repeat(5, 15%);
     }
     h1, h2 {
-        font-weight: normal; 
-    }
-    h1 {
-        font-size: 3.4em;
-    }
-    h2 {
-        font-size: 2.5em;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: lighter;
     }
     #name {
         grid-column: 2 / 4;
         grid-row: 4 / 5;
         display: grid;
+        grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
         grid-template-rows: 73% 63% 33%;
         z-index: 2;
     }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
     #name h1 {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
         opacity: 0;
         animation-name: fadeLeft;
         animation-duration: 0.3s;
@@ -91,32 +91,13 @@
         animation-delay: 2.2s;
     }
     #name h2 {
+        grid-column: 2 / 5;
+        grid-row: 2 / 3;
         opacity: 0;
         animation-name: fadeLeft;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
         animation-delay: 2.3s;
-    }
-    img {
-        width: 60%;
-    }
-    #orbit {
-        color: white;
-        transform: translateX(30%) scale(0);
-        animation-name: fadeRight, fadeRight2;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-        animation-delay: 2.4s;
-    }
-    #portrait {
-        grid-column: 3 / 5;
-        grid-row: 2 / 5;
-        z-index: 1;
-        opacity: 0;
-        animation-name: stretchUp;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-delay: 1.6s;
     }
     .stars {
         position: fixed;
@@ -186,12 +167,6 @@
         h2 {
             font-size: 1.5em;
         }
-        img {
-            width: 60%;
-        }
-        #orbit {
-            transform: translateX(50%) scale(0);
-        }
         @keyframes stretchUp3 {
             0% {
                 transform: scaleX(0) translateX(50%);
@@ -211,12 +186,6 @@
         }
         h2 {
             font-size: 1.1em;
-        }
-        img {
-            width: 60%;
-        }
-        #orbit {
-            transform: translateX(50%) scale(0);
         }
         @keyframes stretchUp3 {
             0% {
@@ -267,7 +236,7 @@
         
     }
     100% {
-        transform: translateX(30%);
+        transform: translateX(0%);
     }
 }
 @keyframes starFall {
