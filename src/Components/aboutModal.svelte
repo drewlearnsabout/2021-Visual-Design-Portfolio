@@ -91,6 +91,7 @@
 	button:hover {
 		box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 		transform: translateY(-1px);
+		cursor: url("images/Circle Cursor.png"), auto;
 	}
 	@media only screen and (max-width: 850px) and (max-height: 500px) {
         .modal {

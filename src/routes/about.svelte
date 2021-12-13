@@ -174,6 +174,7 @@ h2 {
 .links:hover {
     text-decoration: underline;
     text-decoration-color: white;
+    cursor: url("images/Circle Cursor.png"), auto;
 }
 section {
     display: grid;
