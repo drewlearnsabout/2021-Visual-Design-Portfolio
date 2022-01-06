@@ -44,7 +44,7 @@
         height: 100vh;
         grid-template-columns: 15% 85%;
         font-family: 'PT Sans Narrow', sans-serif;
-        cursor: url("images/Circle Cursor.png"), auto;
+        cursor: url("images/Circle Cursor.png"), pointer;
     }
     #animationSection {
         height: 100vh;

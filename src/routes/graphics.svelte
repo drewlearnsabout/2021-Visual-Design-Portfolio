@@ -37,7 +37,7 @@
             background-repeat: no-repeat;
             background-position: right;
             grid-template-columns: 15% 85%;
-            cursor: url("images/Circle Cursor.png"), auto;
+            cursor: url("images/Circle Cursor.png"), pointer;
         }
         #graphicsSection {
             overflow-y: scroll;

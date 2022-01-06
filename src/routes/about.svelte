@@ -149,7 +149,7 @@
     background: #222634;
     height: 100%;
     grid-template-columns: 15% 85%;
-    cursor: url("images/Circle Cursor.png"), auto;
+    cursor: url("images/Circle Cursor.png"), pointer;
 }
 h1, p {
     font-family: 'PT Sans Narrow', sans-serif;
