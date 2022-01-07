@@ -1,11 +1,32 @@
 <nav id="nav">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/websites">Websites</a>
-    <a href="/animations">Animation</a>
-    <a href="/graphics">Graphics</a>
-    <a href="/Articles" id="articles">Articles</a>
-    <a href="/contact">Contact</a>
+    <div id="homeSection" class="navSections">
+        <a href="/">Home</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="aboutSection" class="navSections">
+        <a href="/about">About</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="websiteSection" class="navSections">
+        <a href="/websites">Websites</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="animationSection" class="navSections">
+        <a href="/animations">Animation</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="graphicSection" class="navSections">    
+        <a href="/graphics">Graphics</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="articleSection" class="navSections">
+        <a href="/articles">Articles</a>
+        <div class="triangle"></div>
+    </div>
+    <div id="contactSection" class="navSections">    
+        <a href="/contact">Contact</a>
+        <div class="triangle"></div>
+    </div>
 </nav>
 
 <style>
@@ -21,30 +42,37 @@
         align-content: center;
         gap: 30px 0;
     }
+    .navSections {
+        display: grid;
+    }
     nav a {
         color: white;
         text-decoration: none;
-        cursor: url("images/Circle Cursor.png"), pointer;
     }
     nav a:hover {
-        text-decoration: underline;
-        animation-name: spazz;
-        animation-duration: 0.3s;
-        cursor: url("images/Circle Cursor.png"), pointer;
+        font-weight: bolder;
     }
-    #articles {
-        display: none;
+    .triangle {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid white;
+        opacity: 0;
+    }
+    .navSections a:hover + .triangle {
+        animation-name: slideRight;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
     }
 
-    @keyframes spazz {
+    @keyframes slideRight {
         0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(0.8);
+            opacity:0;
         }
         100% {
-            transform: scale(1);
+            opacity: 1;
+            transform: rotate(360deg);
         }
     }
     @media only screen and (max-width: 675px) {

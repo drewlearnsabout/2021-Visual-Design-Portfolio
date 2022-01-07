@@ -149,7 +149,6 @@
     background: #222634;
     height: 100%;
     grid-template-columns: 15% 85%;
-    cursor: url("images/Circle Cursor.png"), pointer;
 }
 h1, p {
     font-family: 'PT Sans Narrow', sans-serif;
@@ -174,7 +173,6 @@ h2 {
 .links:hover {
     text-decoration: underline;
     text-decoration-color: white;
-    cursor: url("images/Circle Cursor.png"), auto;
 }
 section {
     display: grid;
