@@ -1,4 +1,5 @@
 <script>
+    let hpGraphics = "images/Graphics Page/Hp Graphic.png";
     let abaTherapy = "images/Graphics Page/ABA Therapy Icon.png";
     let books = "images/Graphics Page/Books Icon.png";
     let calendar = "images/Graphics Page/Calendar 2021 Icon.png";
@@ -30,6 +31,12 @@
 <section id="graphicsSection">
     <h1>Graphics</h1>
     <section id="allGraphics">
+        <section id="hpGraphics">
+            <h2>HP Graphics</h2>
+            <div>
+                <img src="{hpGraphics}" alt="Hp Responsive displays">
+            </div>
+        </section>
         <section id="2dgraphics">
             <h2>2D Graphics</h2>
             <div id="twoGrid">
@@ -104,6 +111,16 @@
         }
         .threeDClass {
             width: 8%;
+        }
+
+        /* HP Graphics */
+        #hpGraphics {
+            display: grid;
+            justify-content: center;
+        }
+        #hpGraphics div img {
+            width: 70vw;
+
         }
         /* 2D Grid */
         #twoGrid {
