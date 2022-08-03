@@ -1,5 +1,6 @@
 <script>
     let awsBanner = "images/Articles Page/InkBanner.jpg";
+    let awsArticle = 'images/Articles Page/AWS AH Case Study.pdf'
     import Nav from "../Components/nav.svelte";
 </script>
 
@@ -8,7 +9,7 @@
     <section id="articleGroup">
         <h1>ARTICLES</h1>
         <section id="inkBanner">
-            <a href="#">
+            <a href="{awsArticle}" target="_blank">
                 <img src="{awsBanner}" alt="Banner of AWS and Ink Home Page">
             </a>
             <div id="inkDescription">
@@ -16,7 +17,7 @@
                 <p>This article describes the process of the initial process and the latest progress of designing
                     and implementing an e-commerce site for a collaboration between to organizations. 
                 </p>
-                <button>Read Article</button>
+                <button><a href="{awsArticle}" target="_blank">Read Article</a></button>
             </div>
         </section>
     </section>

@@ -96,6 +96,7 @@
             display: grid;
             font-family: 'PT Sans Narrow', sans-serif;
             color: white;
+            max-width: 100vw;
         }
         #graphicsSection h1, h2 {
             font-size: 2em;
@@ -106,23 +107,23 @@
         h2 {
             font-size: 1.5em;
         }
+        /* HP Graphics */
+        #hpGraphics {
+            display: grid;
+            justify-items: center;
+            width: 100%;
+        }
+        #hpGraphics div img {
+            width: 70vw;
+        }
+
+        /* 2D Grid */
         .twoDClass {
             width: 45%;
         }
         .threeDClass {
             width: 8%;
         }
-
-        /* HP Graphics */
-        #hpGraphics {
-            display: grid;
-            justify-content: center;
-        }
-        #hpGraphics div img {
-            width: 70vw;
-
-        }
-        /* 2D Grid */
         #twoGrid {
             display: grid;
             grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
