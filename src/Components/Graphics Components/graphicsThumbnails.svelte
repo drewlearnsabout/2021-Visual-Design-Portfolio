@@ -111,7 +111,7 @@
         #hpGraphics {
             display: grid;
             justify-items: center;
-            width: 100%;
+            max-width: 100vw;
         }
         #hpGraphics div img {
             width: 70vw;
