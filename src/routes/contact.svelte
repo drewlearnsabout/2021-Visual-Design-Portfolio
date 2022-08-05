@@ -1,6 +1,7 @@
 <script>
     let airplane = "images/Contact Page/Airplane.png";
     let poof = "images/Contact Page/Rectangle 29.png";
+    let resume = "static/links/Resume_Andrew Carbungco.docx.pdf";
     import Nav from "../Components/nav.svelte";
     import Modal from "../Components/aboutModal.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
@@ -20,19 +21,13 @@
             <p>Click the plane for contact info.</p>
             {#if planeModal}
             <Modal on:close="{() => planeModal = false}">
-                <h2 id="modalH2">How to reach me</h2>
+                <h2 id="modalH2">Contact Info</h2>
                 <p>Email: andrew.carbungco@gmail.com</p>
                 <p>Phone: 619-540-0607</p>
-                
-                <!--
-                <form id="formModalId" class="formModalClass" name="form" data-netlify="true" method="POST" netlify>
-                <label>Name<br><input class="formInput" id="nameBox" type="text" name="Name"></label>
-                <label>E-mail<br><input class="formInput" id="emailBox" type="email" name="Email"></label>
-                <label>Telephone<br><input class="formInput" id="numberBox" type="text" name="number"></label>
-                <label>What would you like to work on?<br><textarea id="textBox" type="text" name="Message"></textarea></label>
-                <button id="submit" type="submit">Send it.</button>
-                </form>
-                -->
+                <div class="modalLinks">
+                    <a class="modalA" href="{resume}" target="_blank">Resume</a>
+                    <a class="modalA" href="https://www.linkedin.com/in/andrew-carbungco-1357ab22/" target="_blank">LinkedIn Profile</a>
+                </div>
             </Modal>
             {/if}
         </section>
@@ -70,6 +65,19 @@
 #modalH2 {
     text-align: center;
 }
+.modalLinks {
+    display: grid;
+    grid-template-columns: 20% 25%;
+}
+.modalA {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7vw;
+}
+.modalA:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
 #contactSection p {
     color: white;
     font-size: 25px;
@@ -85,6 +93,7 @@
     animation-timing-function: ease-in-out;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    cursor: pointer;
 }
 #poof, #poof2, #poof3 {
     width: 3.5vw;
@@ -113,29 +122,6 @@
     animation-iteration-count: infinite;
     grid-column: 5 / 6;
 }
-/*
-#formModalId {
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: repeat(5, auto);
-    justify-content: center;
-    row-gap: 10px;
-}
-#formModalId button {
-    width: 70%;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: rgb(53, 53, 53);
-    font-weight: bold;
-    background-color: rgb(219, 219, 219);
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-label, #submit {
-    grid-column: 2 / 3;
-    width: 100%;
-}
-*/
 
 @keyframes float {
     0% {
