@@ -21,7 +21,7 @@
 <div id="aboutPage">
     <Nav/>
     <section>
-        <a href="/websites" id="nextPage">
+        <a href="/graphics" id="nextPage">
             Next Page >
         </a>
         <article id="description">

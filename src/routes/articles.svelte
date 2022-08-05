@@ -5,6 +5,9 @@
 </script>
 
 <section id="articleSection">
+    <a href="/contact" id="nextPage">
+        Next Page >
+    </a>
     <Nav/>
     <section id="articleGroup">
         <h1>ARTICLES</h1>
@@ -24,6 +27,18 @@
 </section>
 
 <style>
+    #nextPage {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    top: 75%;
+    left: 85%;
+    text-decoration: none;
+    }
+    #nextPage:hover {
+        text-decoration: underline;
+    }
     #articleSection {
     display: grid;
     background-size: cover;

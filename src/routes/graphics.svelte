@@ -6,7 +6,7 @@
 </script>
 
 <section style="background-image: url('{bgImage}')" id="graphicsPage">
-    <a href="/contact" id="nextPage">
+    <a href="/websites" id="nextPage">
         Next Page >
     </a>
     <nav><Nav/></nav>
