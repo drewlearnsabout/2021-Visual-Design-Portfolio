@@ -7,16 +7,16 @@
         <a href="/about">About</a>
         <div class="triangle"></div>
     </div>
+    <div id="graphicSection" class="navSections">    
+        <a href="/graphics">Graphics</a>
+        <div class="triangle"></div>
+    </div>
     <div id="websiteSection" class="navSections">
         <a href="/websites">Websites</a>
         <div class="triangle"></div>
     </div>
     <div id="animationSection" class="navSections">
         <a href="/animations">Animation</a>
-        <div class="triangle"></div>
-    </div>
-    <div id="graphicSection" class="navSections">    
-        <a href="/graphics">Graphics</a>
         <div class="triangle"></div>
     </div>
     <div id="articleSection" class="navSections">

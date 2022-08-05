@@ -15,7 +15,6 @@
         <div id="name">
             <h1>Andrew Carbungco</h1>
             <h2>Visual Designer</h2>
-            
         </div>
         <section id="initialBackground"></section>
     </section>
@@ -53,7 +52,7 @@
         display: grid;
         background-size: cover;
         background-color: #222634;
-        height: 100%;
+        width: 100%;
         grid-template-columns: 15% 85%;
     }
     #main {
