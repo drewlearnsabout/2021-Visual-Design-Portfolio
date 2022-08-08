@@ -26,14 +26,13 @@
     let maInk = "images/Graphics Page/MA Ink Post.png";
     let ascent = "images/Graphics Page/Ascent Post.png";
     let riseUp = "images/Graphics Page/Rising Up Logo.png";
-    let events = "images/Graphics Page/Events Logo.png";
 </script>
 
 <section id="graphicsSection">
     <h1>Graphics</h1>
     <section id="allGraphics">
         <section class="hpGraphics">
-            <h2>HP Graphics</h2>
+            <h2>HP High Fidelity Prototypes</h2>
             <div>
                 <img src="{hpGraphics}" alt="Hp Responsive displays">
             </div>
@@ -90,7 +89,6 @@
                     <img src="{ascent}"  alt="Display of new toys that children can play with then they are at the clinic">
                     <img src="{riseUp}" id="riseUp" alt="Banner component for a display dedicated to arewards system for Aim High employees">
                 </div>    
-                <img src="{events}" class="socialThree" alt="Aim High Events Banner, Thanksgiving themed">
             </div>
         </section>
     </section>
@@ -242,8 +240,5 @@
         #riseUp {
             background-color: rgb(255, 255, 255);
         }
-        .socialThree {
-            grid-column: 2 / 4;
-            width: 90%;
-        }
+
 </style>

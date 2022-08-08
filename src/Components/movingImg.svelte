@@ -1,12 +1,12 @@
 <script>
-    let bxOne = "images/Animations/Ink-Process-Step-3.gif";
+    let bxOne = "images/Animations/Weather App gif.gif";
     let bxTwo = "images/Animations/Behavior Issues 2.gif";
     let contact = "images/Animations/Contact.gif";
     let decProb = "images/Animations/Decreased Problem Bxs.gif";
-    let improvAttn = "images/Animations/Ink-Process-Step-5.gif";
+    let improvAttn = "images/Animations/Branding Gif.gif";
     let increaseLng = "images/Animations/Increased Language.gif";
     let edge = "images/Animations/Edge Banner.gif";
-    let mainPg = "images/Animations/Main-Page-Animation-Ver-2.gif";
+    let mainPg = "images/Animations/Ink-Process-Step-3.gif";
     let peerPrgm = "images/Animations/Peer-Program-Icon.gif";
     let whatImpact = "images/Animations/What-is-Impact-Banner.gif";
 
@@ -32,14 +32,21 @@
         justify-items: center;
         align-items: center;
     }
-    #bxOne, #bxTwo, #contact, #mainPg {
+    #bxOne, #improvAttn {
+        width: 16vw;
+        grid-area: 2 / 2 / 3 / 3;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #bxTwo, #contact, #mainPg {
         width: 18vw;
         grid-area: 2 / 2 / 3 / 3;
         animation-duration: 60s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    #decProb, #improvAttn, #increaseLng, #edge, #peerPrgm, #whatImpact {
+    #decProb, #increaseLng, #edge, #peerPrgm, #whatImpact {
         width: 26vw;
         grid-area: 2 / 2 / 3 / 3;
         animation-duration: 60s;
@@ -88,7 +95,7 @@
     @keyframes left1 {
         0% {
             opacity: 0;
-            transform: translateX(100px);
+            transform: translateX(100px) rotate(-90deg);
         }
         3% {
             opacity: 1;
@@ -98,7 +105,7 @@
         }
         10% {
             opacity: 0;
-            transform: translateX(-150px);
+            transform: translateX(-150px) rotate(-90deg);
             display: none;
         }
         99% {

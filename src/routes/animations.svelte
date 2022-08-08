@@ -11,9 +11,10 @@
     </a>
     <Nav/>
     <section id="animationSection">
-        <h1>ICON ANIMATIONS</h1>
+        
         <div id="screenArea">
             <Screen/>
+            <h1>ICON ANIMATIONS</h1>
             <section>
                 <Animations/>
             </section>
