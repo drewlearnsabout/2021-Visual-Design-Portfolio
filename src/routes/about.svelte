@@ -50,23 +50,27 @@
                     About Andrew
                 </h2>
                 <p>
-                    I'm a native San Diegan that got enchanted by the trees and the coffee of Portland, OR.<br>
+                    I'm a native San Diegan that lives on coffee from Portland, OR.<br>
                     I run on 2 cups of caffiene a day while balancing my design career, life, and a very<br>
-                    active, yet cuddly toddler.<br>
-                    <br>I have a goal of soaking in what I can from life, and to eventually teach my son<br>
-                    that there's so much out there in the world to explore.
+                    active, yet cuddly toddler.<br><br>
+                    **UPDATE  I'm expecting a baby girl!
+                    <br><br>I watched my parents make a life for themselves as immigrants by taking the jobs
+                    they can get to feed me and my brother.  I want to take those lessons that I learned and show
+                    my parents and also my own kids that we can reach our goals, as long as we keep striving for them.
                 </p>
             </Modal>
             {/if}
             {#if showModal2}
             <Modal on:close="{() => showModal2 = false}">
                 <h2>Animations</h2>
-                <p>Things that move are always more interesting to look at.<br><br>
-                    I grew up watching cartoons and playing a lot video games. I saw how captivating it was to watch images in motion and
-                    animation done like in Avatar the Last AirBender, Naruto, and Cowboy Bebop has inspired me to try my hand at it.<br><br> 
-                    I incorporate that same fascination into the characters I create and the emotions<br>
-                    they express, and even though I have a lot to learn, I'm looking forward to the 
-                    next one I make.
+                <p>I bring things to life with animation.<br><br>
+                    I was exposed to cartoons, video games, and movies that inspired a hobby that I eventually
+                    was able to incorporate into my designs.<br><br> 
+                    The need to create animations was first realized when I needed to redesign the home page of
+                    a previous employer's website, and creating that first gif sparked a passion to continue creating more.
+                    <br><br>
+                    I realize that using animation can be a valuable asset when presenting information
+                    to the public, and I strive to become better at creating effective animations that will help others understand the bigger picture.
                 </p>
                 <a href="/animations" class="links"><p>See Animations <span>&#8594;</span></p></a>
             </Modal>
@@ -75,11 +79,14 @@
             <Modal on:close="{() => showModal3 = false}">
                 <h2>Articles</h2>
                 <p>
-                    My design decisions are based on what others will do when they interact with it.<br> 
-                    This stems from my experience as behavior analyst and technician and the research teams I was part of studying mental health.
+                    My experience in taking data and curating it to create better designs stems from 
+                    my work as a behavior analyst and the research teams I was part of caring for
+                    children diagnosed with neurological disorders and studying mental health.
                     <br><br>
-                    Empathy is constantly talked about in UX design, and what better way to show my understanding
-                    of how we as humans feel and interact with the world than by research and observation through my designs.
+                    I understand how important it is to incorporate human-center research into design
+                    to ensure the products they use are as easy to use as possible, especially for those
+                    with disabilities.  Only by putting in the work to record and analyze data can we produce
+                    results that will benefit the user.
                 </p>
                 <a href="articles" class="links"><p>See Articles <span>&#8594;</span></p></a>
             </Modal>
@@ -94,14 +101,15 @@
             {#if showModal5}
             <Modal on:close="{() => showModal5 = false}">
                 <h2>Graphics</h2>
-                <p>As someone who preferred reading comics as a kid,
-                I took in and understood more of any material that was paired with a visual.<br><br>
-                Although I can conceptualize more clearly now as I'm much older, I still appreciate
-                having visuals to guide me through my experiences.  I can even see it on my own 2 year old's face
-                whenever we read through any of his picture books, and you can tell how much he enjoys
-                all of the color, landscapes and entities that fill each page.<br><br>
-                Visuals can make or break any experience, and so I take the time to understand
-                what encaptures who the audience is in each of my projects.
+                <p>I knew from an early age that I was able to remember things clearly when paired with a visual,
+                    mainly due to the enormous amount of comic books I've read in the past.
+                <br><br>
+                Even as I get older, I still appreciate having visuals to guide me through my experiences.
+                This rings true for many others, and I want to incorporate visuals that will help the experience be clear
+                and helpful for the users that I design for.
+                <br><br>
+                Using a combination of Adobe CC, Figma, and other software, I found the tools needed to help guide
+                my audience through their online experiences.
                 </p>
                 <a href="/graphics" class="links"><p>Graphic Design <span>&#8594;</span></p></a>
             </Modal>
@@ -111,14 +119,18 @@
                 <h2>Websites I've designed, developed, and maintain</h2>
                 <p>
                     What started off as a hobby became my career.<br><br>
-                    My wife told me my first website I made looked retro, like geocities retro.<br>
-                    I was still proud of that project at the time, but I took that queue and strove to have better designs.
-                    Over the course of a few years, I've learned new programming languages, improved my understanding of
-                    modern design, incorporated principles of UI and UX into my workflow, and eventually transitioned into
-                    a media and tech lead for a nonprofit to design, develop and maintain websites this org owns.
+                    My wife told me my first website I made looked terrible and mostly retro. Like geocities retro.<br>
+                    I was still proud of that project at the time, and I took that and strove to create better designs.
+                    Over the years, I've learned new programming languages, improved my understanding of
+                    modern design, incorporated principles of UI and UX into my workflow, and eventually transitioned my way into
+                    job opportunities that I could finally make a living off of.
                     <br><br>
-                    Please browse through the websites that I have worked tirelessly on, and at this moment it's the best that
-                    I can do, however I'm always striving to get better.
+                    My experience in web development is certainly far from being over, and I strive to improve everyday.
+                    After being introduced to frameworks, I was able to create websites for others and myself, including the portfolio
+                    that you are exploring right now, with Svelte/Sveltekit.  I'll continue to explore new technologies that
+                    can improve the designs I create, and I'm sure this iteration of my portfolio won't be the last.
+                    <br><br>
+
                 </p>
                 <a href="/websites" class="links"><p>See websites. <span>&#8594;</span></p></a>
             </Modal>
