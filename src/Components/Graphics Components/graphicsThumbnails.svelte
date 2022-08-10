@@ -12,8 +12,8 @@
     let parent = "images/Graphics Page/Parental Control Icon.png";
     let psw = "images/Graphics Page/PSW Icon.png";
     let hiring = "images/Graphics Page/Hiring Banner.jpg";
-    let departments = "images/Graphics Page/AnnualReport Departments.png";
-    let revenue = "images/Graphics Page/Revenue and Expenses.png";
+    let departments = "images/Graphics Page/AH Annual Report 1.jpg";
+    let revenue = "images/Graphics Page/AH Annual Report 2.jpg";
     let thanksgiving = "images/Graphics Page/Thanksgiving Banner.jpg"
     let assessment = "images/Graphics Page/Assessment tablet.png";
     let calendarTablet = "images/Graphics Page/Calendar tablet.png";
@@ -61,8 +61,10 @@
             <h2>Banners and Reports</h2>
             <div id="bannerGrid">
                 <img class="bannerReportsClass firstBanners" src="{hiring}" alt="">
-                <img class="bannerReportsClass secondBanners" src="{departments}" alt="">
-                <img class="bannerReportsClass thirdBanners" src="{revenue}" alt="">
+                <div class="bannerReportsClass secondBanners" alt="">
+                    <img class="bannerReportsClass aimHigh" src="{departments}" alt="">
+                    <img class="bannerReportsClass aimHigh" src="{revenue}" alt="">
+                </div>
                 <img class="bannerReportsClass fourthBanners" src="{thanksgiving}" alt="">
             </div>
         </section>
@@ -84,11 +86,7 @@
                 <div class="socialOne">
                     <img src="{veterans}" alt="social media post for veteran's day">
                     <img src="{maInk}" alt="Aim High Martial Arts and Ink's banner that showcases screen printed shorts">
-                </div>
-                <div class="socialTwo">
-                    <img src="{ascent}"  alt="Display of new toys that children can play with then they are at the clinic">
-                    <img src="{riseUp}" id="riseUp" alt="Banner component for a display dedicated to arewards system for Aim High employees">
-                </div>    
+                </div> 
             </div>
         </section>
     </section>
@@ -178,10 +176,14 @@
         .secondBanners {
             grid-column: 2 / 5;
             width: 80%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 100%;
+            column-gap: 5vw;
         }
-        .thirdBanners {
-            grid-column: 2 / 5;
-            width: 80%;
+        .aimHigh {
+            width: 100%;
+            justify-self: center;
         }
         .fourthBanners {
             grid-column: 2 / 5;
@@ -228,17 +230,6 @@
         }
         .socialOne img {
             width: 90%;
-        }
-        .socialTwo {
-            grid-column: 2 / 4;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .socialTwo img {
-            width: 90%;
-        }
-        #riseUp {
-            background-color: rgb(255, 255, 255);
         }
 
 </style>
