@@ -292,7 +292,7 @@ section {
 }
 #websites:hover, #graphics:hover, #contact:hover, #animation:hover, #articles:hover, #about:hover {
     animation-name: float;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
