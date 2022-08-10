@@ -11,13 +11,14 @@
     </a>
     <nav><Nav/></nav>
     <section id="uiuxSection">
+        <h2>UI/UX</h2>
         <Material/>
     </section>
 </section>
 <div id="landscape"><Landscape/></div>
 
 <style>
-        #nextPage {
+    #nextPage {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.2em;
     color: white;
@@ -37,7 +38,15 @@
             background-repeat: no-repeat;
             background-position: right;
             grid-template-columns: 15% 85%;
-        }
+    }
+    #uiuxPage h2 {
+        font-family: 'PT Sans Narrow', sans-serif;
+        color: white;
+        font-weight: normal;
+        font-size: 2em;
+        padding: 0 10%;
+        text-align: center;
+    }
         #uiuxSection {
             overflow-y: scroll;
         }

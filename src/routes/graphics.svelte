@@ -11,6 +11,7 @@
     </a>
     <nav><Nav/></nav>
     <section id="graphicsSection">
+        <h2>GRAPHICS</h2>
         <Thumbnails/>
     </section>
 </section>
@@ -38,6 +39,14 @@
             background-position: right;
             grid-template-columns: 15% 85%;
         }
+        #graphicsPage h2 {
+        font-family: 'PT Sans Narrow', sans-serif;
+        color: white;
+        font-weight: normal;
+        font-size: 2em;
+        padding: 0 10%;
+        text-align: center;
+    }
         #graphicsSection {
             overflow-y: scroll;
         }
@@ -63,7 +72,7 @@
         }
 
         @media (orientation: landscape) {
-            #uiuxPage {
+            #graphicsPage {
                 display: grid;
             }
             #landscape {
@@ -72,7 +81,7 @@
         }
 
         @media (orientation: portrait) {
-            #uiuxPage {
+            #graphicsPage {
                 display: none;
             }
             #landscape {

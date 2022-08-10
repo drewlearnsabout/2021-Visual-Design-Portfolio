@@ -25,7 +25,6 @@
 </script>
 
 <section id="graphicsSection">
-    <h1>Graphics</h1>
     <section id="allGraphics">
         <section id="2dgraphics">
             <h2>2D Graphics</h2>
@@ -85,7 +84,7 @@
             color: white;
             max-width: 100vw;
         }
-        #graphicsSection h1, h2 {
+        #graphicsSection h2 {
             font-size: 2em;
             font-weight: normal;
             padding: 0 10%;
