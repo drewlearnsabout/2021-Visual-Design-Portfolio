@@ -50,6 +50,8 @@
         height: 100vh;
         font-family: 'PT Sans Narrow', sans-serif;
         color: white;
+        display: grid;
+        align-items: center;
     }
     #animationSection h1 {
         padding: 0 10%;
@@ -60,6 +62,7 @@
     #screenArea {
         background-color: rgb(29, 21, 3);
         padding: 10px 0;
+        display: grid;
     }
     @media (orientation: landscape) {
         #animations {
@@ -78,7 +81,5 @@
             display: initial;
         }
     }
-    @media only screen and (max-width: 850px) and (max-height: 500px) {
 
-    }
 </style>

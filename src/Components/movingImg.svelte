@@ -53,14 +53,6 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    @media only screen and (max-width: 850px) and (max-height: 500px) {
-        #bxOne, #bxTwo, #contact, #mainPg {
-            width: 17vw;
-        }
-        #decProb, #improvAttn, #increaseLng, #edge, #peerPrgm, #whatImpact {
-            width: 22vw;
-        }
-    }
     #bxOne {
         animation-name: left1;
     }

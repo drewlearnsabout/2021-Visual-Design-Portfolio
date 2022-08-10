@@ -1,12 +1,13 @@
 <script>
     import Nav from "../Components/nav.svelte";
     let planetsOrbit = "images/About Page/Rings.png";
-    let about = "images/About Page/Planets/About.png"
-    let animation = "images/About Page/Planets/Animation.png"
-    let articles = "images/About Page/Planets/Articles.png"
-    let contact = "images/About Page/Planets/Contact.png"
-    let graphics = "images/About Page/Planets/Graphics.png"
-    let websites = "images/About Page/Planets/Websites.png"
+    let about = "images/About Page/Planets/About.png";
+    let animation = "images/About Page/Planets/Animation.png";
+    let articles = "images/About Page/Planets/Articles.png";
+    let contact = "images/About Page/Planets/Contact.png";
+    let graphics = "images/About Page/Planets/Graphics.png";
+    let websites = "images/About Page/Planets/Websites.png";
+    let bgImage = "images/Home Page/Space Background.png";
     import Modal from "../Components/aboutModal.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 
@@ -18,7 +19,7 @@
     let showModal6 = false;
 </script>
 
-<div id="aboutPage">
+<div style="background-image: url('{bgImage}')" id="aboutPage">
     <Nav/>
     <section>
         <a href="/graphics" id="nextPage">
@@ -159,7 +160,7 @@
     display: grid;
     background-size: cover;
     background: #222634;
-    height: 100%;
+    width: 100%;
     grid-template-columns: 15% 85%;
 }
 h1, p {
