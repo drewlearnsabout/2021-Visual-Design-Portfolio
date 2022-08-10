@@ -11,6 +11,9 @@
     let beerWireframeTwo = "images/UIUX Page/Beer Garden Menu.jpg";
     let beerStoryboardingOne = "images/UIUX Page/Beer Garden Storyboard - Big Picture.jpg";
     let beerStoryboardingTwo = "images/UIUX Page/Beer Garden Storyboard - Close Up.jpg";
+    let beerPersonaOne = "images/UIUX Page/Beer Garden Persona 1.jpg";
+    let beerPersonaTwo = "images/UIUX Page/Beer Garden Persona 2.jpg";
+    let beerUserFlow = "images/UIUX Page/Beer Garden User Flow.jpg";
 </script>
 
 <section id="uiux">
@@ -47,6 +50,15 @@
             <h3>Storyboards</h3>
             <img src="{beerStoryboardingOne}" alt="Beer Garden Big Story Storyboard">
             <img src="{beerStoryboardingTwo}" alt="Beer Garden Close Up Storyboard">
+        </div>
+        <div id="personas">
+            <h3>Personas</h3>
+            <img src="{beerPersonaOne}" alt="Beer Garden Persona">
+            <img src="{beerPersonaTwo}" alt="Beer Garden Persona">
+        </div>
+        <div id="userFlow">
+            <h3>User Flow</h3>
+            <img src="{beerUserFlow}" alt="Beer Garden Digital Menu and Ordering App User Flow">
         </div>
     </section>
 </section>
@@ -85,7 +97,7 @@
             justify-items: start;
             column-gap: 5%;
         }
-        #paperWireframes img {
+        #paperWireframes img, #userFlow {
             width: 65%;
             justify-self: stretch;
         }
