@@ -159,6 +159,7 @@
 #aboutPage {
     display: grid;
     background-size: cover;
+    background-repeat: no-repeat;
     background: #222634;
     width: 100%;
     grid-template-columns: 15% 85%;
@@ -297,6 +298,7 @@ section {
     animation-iteration-count: infinite;
 }
 
+
 @keyframes rise {
     0% {
         transform: translateY(5px);
@@ -351,7 +353,7 @@ section {
             font-size: 0.8em;
         }
         .float {
-            width: 60%;
+            width: 40%;
             justify-self: left;
         }
         .text {

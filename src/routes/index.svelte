@@ -52,6 +52,7 @@
         display: grid;
         background-size: cover;
         background-color: #222634;
+        background-repeat: no-repeat;
         width: 100%;
         grid-template-columns: 15% 85%;
     }

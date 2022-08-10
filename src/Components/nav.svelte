@@ -7,6 +7,10 @@
         <a href="/about">About</a>
         <div class="triangle"></div>
     </div>
+    <div id="uiuxSection" class="navSections">    
+        <a href="/uiux">UI/UX</a>
+        <div class="triangle"></div>
+    </div>
     <div id="graphicSection" class="navSections">    
         <a href="/graphics">Graphics</a>
         <div class="triangle"></div>

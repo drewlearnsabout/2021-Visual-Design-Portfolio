@@ -1,6 +1,4 @@
 <script>
-    let hpGraphics = "images/Graphics Page/Add Setting - Supply Status.png";
-    let hpGraphicsTwo = "images/Graphics Page/Digital Fax - Manage Fax.png";
     let abaTherapy = "images/Graphics Page/ABA Therapy Icon.png";
     let books = "images/Graphics Page/Books Icon.png";
     let calendar = "images/Graphics Page/Calendar 2021 Icon.png";
@@ -24,24 +22,11 @@
     let Woodbreak = "images/Graphics Page/Woodbreak.png";
     let veterans = "images/Graphics Page/Veterans Post.png";
     let maInk = "images/Graphics Page/MA Ink Post.png";
-    let ascent = "images/Graphics Page/Ascent Post.png";
-    let riseUp = "images/Graphics Page/Rising Up Logo.png";
 </script>
 
 <section id="graphicsSection">
     <h1>Graphics</h1>
     <section id="allGraphics">
-        <section class="hpGraphics">
-            <h2>HP High Fidelity Prototypes</h2>
-            <div>
-                <img src="{hpGraphics}" alt="Hp Responsive displays">
-            </div>
-        </section>
-        <section class="hpGraphics">
-            <div>
-                <img src="{hpGraphicsTwo}" alt="Hp Responsive displays">
-            </div>
-        </section>
         <section id="2dgraphics">
             <h2>2D Graphics</h2>
             <div id="twoGrid">
@@ -108,28 +93,6 @@
         }
         h2 {
             font-size: 1.5em;
-        }
-        /* HP Graphics */
-        .hpGraphics {
-            display: grid;
-            margin: 5% 0;
-            grid-template-columns: 10% 80% 10%;
-            grid-template-rows: auto;
-            justify-items: center;
-            max-width: 100vw;
-        }
-        .hpGraphics h2 {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-        }
-        .hpGraphics div {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            justify-content: center;
-        }
-        .hpGraphics div img {
-            width: 55vw;
-            justify-self: center;
         }
 
         /* 2D Grid */

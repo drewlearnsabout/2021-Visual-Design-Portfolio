@@ -1,23 +1,23 @@
 <script>
     let bgImage = "images/Graphics Page/grid.png";
     import Nav from "../Components/nav.svelte";
-    import Thumbnails from "../Components/Graphics Components/graphicsThumbnails.svelte";
+    import Material from "../Components/uiux Components/uiuxMaterial.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
-<section style="background-image: url('{bgImage}')" id="graphicsPage">
+<section style="background-image: url('{bgImage}')" id="uiuxPage">
     <a href="/websites" id="nextPage">
         Next Page >
     </a>
     <nav><Nav/></nav>
-    <section id="graphicsSection">
-        <Thumbnails/>
+    <section id="uiuxSection">
+        <Material/>
     </section>
 </section>
 <div id="landscape"><Landscape/></div>
 
 <style>
-    #nextPage {
+        #nextPage {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.2em;
     color: white;
@@ -29,7 +29,7 @@
     #nextPage:hover {
         text-decoration: underline;
     }
-        #graphicsPage {
+    #uiuxPage {
             display: grid;
             height: 100vh;
             background: #222634;
@@ -38,7 +38,7 @@
             background-position: right;
             grid-template-columns: 15% 85%;
         }
-        #graphicsSection {
+        #uiuxSection {
             overflow-y: scroll;
         }
         /* Scroll Bar */
@@ -61,7 +61,6 @@
         ::-webkit-scrollbar-thumb:hover {
         background: #555; 
         }
-
         @media (orientation: landscape) {
             #uiuxPage {
                 display: grid;
