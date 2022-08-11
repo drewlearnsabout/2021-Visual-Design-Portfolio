@@ -7,6 +7,7 @@
     let contact = "images/About Page/Planets/Contact.png";
     let graphics = "images/About Page/Planets/Graphics.png";
     let websites = "images/About Page/Planets/Websites.png";
+    let uiux = "images/About Page/Planets/UIUX.png";
     let bgImage = "images/Home Page/Space Background.png";
     import Modal from "../Components/aboutModal.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
@@ -17,12 +18,13 @@
     let showModal4 = false;
     let showModal5 = false;
     let showModal6 = false;
+    let showModal7 = false;
 </script>
 
 <div style="background-image: url('{bgImage}')" id="aboutPage">
     <Nav/>
     <section>
-        <a href="/graphics" id="nextPage">
+        <a href="/uiux" id="nextPage">
             Next Page >
         </a>
         <article id="description">
@@ -39,12 +41,14 @@
             <img id="contact" class="float" src="{contact}" on:click="{() => showModal4 = true}" alt="Floating planet that directs to contact page.">
             <img id="graphics" class="float" src="{graphics}" on:click="{() => showModal5 = true}" alt="Floating planet that directs to graphics page.">
             <img id="websites" class="float" src="{websites}" on:click="{() => showModal6 = true}" alt="Floating planet that directs to websites page.">
+            <img id="uiux" class="float" src="{uiux}" on:click="{() => showModal7 = true}" alt="Floating planet that directs to websites page.">
             <p id="aboutText" class="text">About</p>
             <p id="animationText" class="text">Animation</p>
             <p id="articlesText" class="text">Articles</p>
             <p id="contactText" class="text">Contact</p>
             <p id="graphicsText" class="text">Graphics</p>
             <p id="websitesText" class="text">Websites</p>
+            <p id="uiuxText" class="text">UI/UX</p>
             {#if showModal}
             <Modal on:close="{() => showModal = false}">
                 <h2>
@@ -131,9 +135,28 @@
                     that you are exploring right now, with Svelte/Sveltekit.  I'll continue to explore new technologies that
                     can improve the designs I create, and I'm sure this iteration of my portfolio won't be the last.
                     <br><br>
-
                 </p>
                 <a href="/websites" class="links"><p>See websites. <span>&#8594;</span></p></a>
+            </Modal>
+            {/if}
+            {#if showModal7}
+            <Modal on:close="{() => showModal7 = false}">
+                <h2>Design for the user</h2>
+                <p>
+                    Creating tacky and unorganized websites led me to UI/UX design.<br><br>
+                    My wife told me my first website I made looked terrible and mostly retro. Like geocities retro.<br>
+                    I was still proud of that project at the time, and I took that and strove to create better designs.
+                    Over the years, I've learned new programming languages, improved my understanding of
+                    modern design, incorporated principles of UI and UX into my workflow, and eventually transitioned my way into
+                    job opportunities that I could finally make a living off of.
+                    <br><br>
+                    My experience in web development is certainly far from being over, and I strive to improve everyday.
+                    After being introduced to frameworks, I was able to create websites for others and myself, including the portfolio
+                    that you are exploring right now, with Svelte/Sveltekit.  I'll continue to explore new technologies that
+                    can improve the designs I create, and I'm sure this iteration of my portfolio won't be the last.
+                    <br><br>
+                </p>
+                <a href="/uiux" class="links"><p>UI/UX   <span>&#8594;</span></p></a>
             </Modal>
             {/if}
         </article>
@@ -205,7 +228,7 @@ section {
 #planetsOrbit {
     width: 75%;
     z-index: 0;
-    grid-column: 2 / 11;
+    grid-column: 1 / 11;
     grid-row: 1 / 11;
 }
 #about {
@@ -292,54 +315,30 @@ section {
     grid-row: 3 / 4;
     transform: translateX(-55px) translateY(-30px);
 }
-#websites:hover, #graphics:hover, #contact:hover, #animation:hover, #articles:hover, #about:hover {
+#uiux {
+    z-index: 1;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    animation-name: rise;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+#uiuxText {
+    z-index: 2;
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    align-self: center;
+    transform: translateX(-55px) translateY(-30px);
+}
+#websites:hover, #graphics:hover, #contact:hover, #animation:hover, #articles:hover, #about:hover, #uiux:hover {
     animation-name: float;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
-
-@keyframes rise {
-    0% {
-        transform: translateY(5px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-@media (orientation: landscape) {
-        #aboutPage {
-            display: grid;
-        }
-        #landscape {
-            display: none;
-        }
-    }
-
-    @media (orientation: portrait) {
-        #aboutPage {
-            display: none;
-        }
-        #landscape {
-            display: initial;
-        }
-    }
-    @media only screen and (max-width: 850px) and (max-height: 500px) {
-        #animation, #articles {
+@media only screen and (max-width: 1280px) and (max-height: 500px) {
+        #animation, #articles, #uiux {
             width: 120%;
         }
         #description {
@@ -387,4 +386,44 @@ section {
             grid-column: 6 / 7;
         }
     }
+@media (orientation: landscape) {
+        #aboutPage {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+
+    @media (orientation: portrait) {
+        #aboutPage {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
+    }
+    @keyframes rise {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 </style>

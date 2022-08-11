@@ -6,7 +6,7 @@
 </script>
 
 <section style="background-image: url('{bgImage}')" id="uiuxPage">
-    <a href="/websites" id="nextPage">
+    <a href="/graphics" id="nextPage">
         Next Page >
     </a>
     <nav><Nav/></nav>

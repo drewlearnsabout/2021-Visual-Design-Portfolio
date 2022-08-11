@@ -36,7 +36,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-
     nav {
         height: 100vh;
         font-family: 'Quicksand', sans-serif;
@@ -45,6 +44,7 @@
         justify-content: center;
         align-content: center;
         gap: 30px 0;
+        padding: 0;
     }
     .navSections {
         display: grid;
@@ -69,7 +69,20 @@
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
-
+    @media only screen and (max-width: 900px) and (max-height: 500px) {
+        nav {
+            font-size: 0.7em;
+            padding: 0;
+            gap: 20px 0;
+        }
+    }
+    @media only screen and (max-width: 675px) {
+        nav {
+            font-size: 0.7em;
+            padding: 0;
+            gap: 15px 0;
+        }
+    }
     @keyframes slideRight {
         0% {
             opacity:0;
@@ -77,11 +90,6 @@
         100% {
             opacity: 1;
             transform: rotate(360deg);
-        }
-    }
-    @media only screen and (max-width: 675px) {
-        nav {
-            font-size: 0.7em; 
         }
     }
 </style>

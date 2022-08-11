@@ -159,12 +159,16 @@
             display: initial;
         }
     }
-    @media only screen and (max-width: 850px) and (max-height: 500px) {
+    @media only screen and (max-width: 950px) and (max-height: 500px) {
         h1 {
             font-size: 2em;
         }
         h2 {
             font-size: 1.5em;
+        }
+        #name h1 {
+        grid-column: 2 / 6;
+        grid-row: 1 / 2;
         }
         @keyframes stretchUp3 {
             0% {
@@ -185,6 +189,10 @@
         }
         h2 {
             font-size: 1.1em;
+        }
+        #name h1 {
+        grid-column: 2 / 6;
+        grid-row: 1 / 2;
         }
         @keyframes stretchUp3 {
             0% {
