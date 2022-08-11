@@ -143,17 +143,16 @@
             <Modal on:close="{() => showModal7 = false}">
                 <h2>Design for the user</h2>
                 <p>
-                    Creating tacky and unorganized websites led me to UI/UX design.<br><br>
-                    My wife told me my first website I made looked terrible and mostly retro. Like geocities retro.<br>
-                    I was still proud of that project at the time, and I took that and strove to create better designs.
-                    Over the years, I've learned new programming languages, improved my understanding of
-                    modern design, incorporated principles of UI and UX into my workflow, and eventually transitioned my way into
-                    job opportunities that I could finally make a living off of.
+                    Creating websites for myself and for others led me to UI/UX design.<br><br>
+                    I mentioned in another bio description that I create websites, and after building each one I sought out
+                    things that I can improve.  One aspect was design, and not just to make the layouts aesthetically pleasing,
+                    but to also make websites easy to use.
                     <br><br>
-                    My experience in web development is certainly far from being over, and I strive to improve everyday.
-                    After being introduced to frameworks, I was able to create websites for others and myself, including the portfolio
-                    that you are exploring right now, with Svelte/Sveltekit.  I'll continue to explore new technologies that
-                    can improve the designs I create, and I'm sure this iteration of my portfolio won't be the last.
+                    I have prior experience working with children diagnosed with neurological disorders. How they interact with technology
+                    made me realize for them how challenging it can be to navigate through a single webpage on a mobile device.  This is why
+                    accessibility is important to me, and it motivates me to have a user-center focus when it comes to design.
+                    I strive to learn more about UX and how it benefits not only the populations that need it, but for everyone
+                    that can use it.  I apply what I can into my creations and will continue to add more functionality as I gain experience.
                     <br><br>
                 </p>
                 <a href="/uiux" class="links"><p>UI/UX   <span>&#8594;</span></p></a>
