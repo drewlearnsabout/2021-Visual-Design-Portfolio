@@ -21,12 +21,36 @@
     <a href="/about" id="nextPage">
         Next Page >
     </a>
+    <footer>
+        <p>Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.</p>
+    </footer>
 </div>
 <div id="landscape"><Landscape/></div>
 
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom: 3vh;
+        left: 50%;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        animation-delay: 3s;
+        animation-name: footerFade;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    footer a {
+        color: white;
+        transition-duration: 0.2s;
+    }
+    footer a:hover, footer a:active {
+        font-weight: bold;
+        color:rgb(21, 159, 201);
+    }
     #nextPage {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1.2em;
@@ -35,6 +59,11 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
+        animation-delay: 3s;
+        animation-name: footerFade;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     #nextPage:hover {
         text-decoration: underline;
@@ -142,6 +171,14 @@
         animation-delay: 1s;
         animation-duration: 0.6s;
     }
+    @keyframes footerFade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
     @media (orientation: landscape) {
         #homePage {
             display: grid;
@@ -160,6 +197,10 @@
         }
     }
     @media only screen and (max-width: 950px) and (max-height: 500px) {
+        footer {
+            left: 67%;
+            font-size: 0.8em;
+        }
         h1 {
             font-size: 2em;
         }
@@ -183,7 +224,11 @@
             }
         }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 667px) {
+    footer {
+            left: 60%;
+            font-size: 0.8em;
+        }
         h1 {
             font-size: 1.5em;
         }
