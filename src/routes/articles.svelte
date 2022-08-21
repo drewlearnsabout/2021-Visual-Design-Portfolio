@@ -13,7 +13,7 @@
     </a>
     <Nav/>
     <section id="articles">
-        <h1>ARTICLES</h1>
+        <h1>UI/UX</h1>
         <section id="articleGroupHP">
             <a href="{hpArticle}" target="_blank" id="hpBanner">
                 <img src="{hpBanner}" alt="Banner of HP UI Case Study">

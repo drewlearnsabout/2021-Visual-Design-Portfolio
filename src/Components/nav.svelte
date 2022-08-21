@@ -8,7 +8,7 @@
         <div class="triangle"></div>
     </div>
     <div id="uiuxSection" class="navSections">    
-        <a href="/uiux">UI/UX</a>
+        <a href="/articles">UI/UX</a>
         <div class="triangle"></div>
     </div>
     <div id="graphicSection" class="navSections">    
@@ -21,10 +21,6 @@
     </div>
     <div id="animationSection" class="navSections">
         <a href="/animations">Animation</a>
-        <div class="triangle"></div>
-    </div>
-    <div id="articleSection" class="navSections">
-        <a href="/articles">Articles</a>
         <div class="triangle"></div>
     </div>
     <div id="contactSection" class="navSections">    
