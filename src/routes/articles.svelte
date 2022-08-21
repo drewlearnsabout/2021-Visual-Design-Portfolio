@@ -1,8 +1,9 @@
 <script>
     let awsBanner = "images/Articles Page/InkBanner.jpg";
     let awsArticle = 'images/Articles Page/AWS AH Case Study.pdf';
+    let hpArticle = 'images/Articles Page/HP UI Case Study.pdf';
     let impactBanner = 'images/Articles Page/Case Study Title.png';
-    let prototypeBanner = 'images/Articles Page/Prototype Banner.png';
+    let hpBanner = 'images/Articles Page/HP Case Study Header.jpg';
     import Nav from "../Components/nav.svelte";
 </script>
 
@@ -13,6 +14,19 @@
     <Nav/>
     <section id="articles">
         <h1>ARTICLES</h1>
+        <section id="articleGroupHP">
+            <a href="{hpArticle}" target="_blank" id="hpBanner">
+                <img src="{hpBanner}" alt="Banner of HP UI Case Study">
+            </a>
+            <div id="hpDescription">
+                <h3>Responsive Prototyping and Specs for Remote Printing Application</h3>
+                <p>This case study describes the process of creating prototypes
+                    and specification guidelines used to help redesign a remote printing application
+                    for HP.
+                </p>
+                <button><a href="{hpArticle}" target="_blank">Read Article</a></button>
+            </div>
+        </section>
         <section id="articleGroup">
             <a href="{awsArticle}" target="_blank">
                 <img src="{awsBanner}" alt="Banner of AWS and Ink Home Page">
@@ -34,16 +48,6 @@
                 <p>This article describes the initial process of redesigning a website dedicated
                     to outreach for families of children with Autism</p>
                     <button><a href="https://redesign-impact.netlify.app/" target="_blank">Read Article</a></button>
-            </div>
-        </section>
-        <section id="articleGroupThree">
-            <a href="https://prototypingvalue.netlify.app/" id="prototypeBanner" target="_blank">
-                <img src="{prototypeBanner}" alt="Header of Value of Prototyping Article">
-            </a>
-            <div id="prototypeDescription">
-                <h3>The Value of Prototyping</h3>
-                <p>This article describes the what, why, and how of prototyping in UX</p>
-                    <button><a href="https://prototypingvalue.netlify.app/" target="_blank">Read Article</a></button>
             </div>
         </section>
     </section>
@@ -69,10 +73,13 @@
     grid-template-columns: 15% 85%;
     font-family: 'PT Sans Narrow', sans-serif;
     }
-    #articles h1, #articleGroup, #articleGroupTwo, #articleGroupThree {
+    #articles h1, #articleGroupHP, #articleGroup, #articleGroupTwo {
         grid-column: 2 / 3;
         display: grid;
         justify-items: center;
+    }
+    #articleGroupTwo {
+        margin-bottom: 10vh;
     }
     #articles {
         display: grid;
@@ -99,9 +106,6 @@
         width: 40%;
         padding: 20px 0;
     }
-    #prototypeBanner {
-        width: 100%;
-    }
     a {
         display: grid;
         justify-items: center;
@@ -109,7 +113,7 @@
     a img {
         width: 40%;
     }
-    #inkDescription, #impactDescription, #prototypeDescription {
+    #hpDescription, #inkDescription, #impactDescription {
         background: gray;
         width: 40%;
         background: rgba( 255, 255, 255, 0.25 );
@@ -120,7 +124,7 @@
         display: grid;
         grid-template-columns: 5% 90% 5%;
     }
-    #inkDescription button, #impactDescription button, #prototypeDescription button {
+    #hpDescription button, #inkDescription button, #impactDescription button {
         width: 25%;
         padding: 5px 10px;
         margin-bottom: 14px;
@@ -128,23 +132,23 @@
         transition-duration: 0.4s;
         border: none;
     }
-    #inkDescription button a, #impactDescription button a, #prototypeDescription a {
+    #hpDescription button a, #inkDescription button a, #impactDescription button a {
         text-decoration: none;
         color: rgb(52, 52, 77);
         transition-duration: 0.4s;
     }
-    #inkDescription button a:hover, #impactDescription button a:hover, #prototypeDescription button a:hover {
+    #hpDescription button a:hover, #inkDescription button a:hover, #impactDescription button a:hover {
         text-decoration: none;
         color: white;
     }
-    #inkDescription button:hover, #impactDescription button:hover, #prototypeDescription button:hover {
+    #hpDescription button:hover, #inkDescription button:hover, #impactDescription button:hover {
         background: rgb(52, 52, 77);
         color: white;
     }
 
+    #hpDescription h3, #hpDescription p, #hpDescription button,
     #inkDescription h3, #inkDescription p, #inkDescription button,
-    #impactDescription h3, #impactDescription p, #impactDescription button,
-    #prototypeDescription h3, #prototypeDescription p, #prototypeDescription button {
+    #impactDescription h3, #impactDescription p, #impactDescription button {
         grid-column: 2 / 3;
     }
 </style>
