@@ -8,7 +8,7 @@
 </script>
 
 <section id="articleSection">
-    <a href="/contact" id="nextPage">
+    <a href="/graphics" id="nextPage">
         Next Page >
     </a>
     <Nav/>

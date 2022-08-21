@@ -155,7 +155,7 @@
                     that can use it.  I apply what I can into my creations and will continue to add more functionality as I gain experience.
                     <br><br>
                 </p>
-                <a href="/uiux" class="links"><p>UI/UX   <span>&#8594;</span></p></a>
+                <a href="/articles" class="links"><p>UI/UX   <span>&#8594;</span></p></a>
             </Modal>
             {/if}
         </article>
