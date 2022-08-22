@@ -60,7 +60,8 @@
         text-align: center;
     }
     #screenArea {
-        background-color: rgb(29, 21, 3);
+        background: rgb(255,255,255);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(5,5,5,1) 17%);
         padding: 10px 0;
         display: grid;
     }
