@@ -24,11 +24,11 @@
 <div style="background-image: url('{bgImage}')" id="aboutPage">
     <Nav/>
     <section>
-        <a href="/uiux" id="nextPage">
+        <a href="/articles" id="nextPage">
             Next Page >
         </a>
         <article id="description">
-            <h1>I Explore.</h1>
+            <h1>Go beyond with design.</h1>
             <p>If you caught on to the theme, I like space and the thought of what's unknown.<br>
             Feel free to explore each planet (not the sun, it's too hot to handle) to learn a little more about me.
             </p>
