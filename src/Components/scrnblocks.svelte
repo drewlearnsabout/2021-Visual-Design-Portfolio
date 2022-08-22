@@ -22,6 +22,8 @@
         width: 30px;
         border-radius: 5px;
         background-color: white;
+        background: rgb(14,14,14);
+        background: linear-gradient(13deg, rgba(14,14,14,1) 0%, rgba(255,255,255,1) 48%);
         animation-direction: normal;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
