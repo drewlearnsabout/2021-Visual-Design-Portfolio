@@ -6,7 +6,7 @@
 </script>
 
 <section  id="animations">
-    <a href="/articles" id="nextPage">
+    <a href="/contact" id="nextPage">
         Next Page >
     </a>
     <Nav/>
