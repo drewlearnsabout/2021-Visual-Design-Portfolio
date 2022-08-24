@@ -3,8 +3,8 @@
     import Landscape from "../Components/landscapeMode.svelte";
     let hp = "images/Home Page/HP Case Study Header.png";
     let ink = "images/Home Page/Ink Header.png";
-    let awsArticle = 'images/Home Page/AWS AH Case Study.pdf';
-    let hpArticle = 'images/Home Page/HP UI Case Study.pdf';
+    let awsArticle = "images/Home Page/AWS AH Case Study.pdf";
+    let hpArticle = "images/Home Page/HP UI Case Study.pdf";
 </script>
 
 <div id="homePage">
@@ -15,11 +15,11 @@
                 <p>UI/UX Case Studies</p>
             </div>
             <div id="caseStudies">
-                <a href="{hpArticle}" class="cases">
+                <a href="{hpArticle}" class="cases" id="hpArticle" rel=external>
                     <img src="{hp}" alt="">
                     <p>PDF</p>
                 </a>
-                <a href="{awsArticle}" class="cases">
+                <a href="{awsArticle}" class="cases" id="awsArticle" rel=external>
                     <img src="{ink}" alt="">
                     <p>Web Article</p>
                 </a>
