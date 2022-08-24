@@ -134,7 +134,6 @@
         height: 0.7%;
         width: 0.4%;
         border-radius: 4px;
-        
         animation-iteration-count: infinite;
     }
     #starOne {

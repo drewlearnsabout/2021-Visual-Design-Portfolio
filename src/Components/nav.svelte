@@ -27,11 +27,17 @@
         <a href="/contact">Contact</a>
         <div class="triangle"></div>
     </div>
+    <div id="timelineSection" class="navSections">
+        <a href="/timeline">.</a>
+        <div class="triangle"></div>
+    </div>
 </nav>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+    #timelineSection {
+        visibility: hidden;
+    }
     nav {
         height: 100vh;
         font-family: 'Quicksand', sans-serif;

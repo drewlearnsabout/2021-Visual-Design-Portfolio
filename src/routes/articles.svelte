@@ -47,13 +47,33 @@
                 <h3>Redesigning the Aim High Impact Website</h3>
                 <p>This article describes the initial process of redesigning a website dedicated
                     to outreach for families of children with Autism</p>
-                    <button><a href="https://redesign-impact.netlify.app/" target="_blank">Read Article</a></button>
+                <button><a href="https://redesign-impact.netlify.app/" target="_blank">Read Article</a></button>
             </div>
         </section>
     </section>
 </section>
 
 <style>
+    /* Scroll Bar */
+    /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f14f;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192); 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
     #nextPage {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.2em;
@@ -62,6 +82,7 @@
     top: 75%;
     left: 85%;
     text-decoration: none;
+    z-index: 99;
     }
     #nextPage:hover {
         text-decoration: underline;
@@ -87,7 +108,8 @@
         grid-template-rows: auto;
         row-gap: 10vh;
         overflow-y: scroll;
-        height: 100vh;
+        height: 99vh;
+        justify-items: center;
     }
     h1 {
         color: white;
@@ -103,46 +125,52 @@
     }
     #impactBanner {
         background-color: white;
-        width: 40%;
-        padding: 20px 0;
+        width: 100%;
+        border-radius: 50px 50px 0 0;
     }
-    a {
+    #articles a {
         display: grid;
         justify-items: center;
+        width: 100%;
     }
-    a img {
+    #articles a img {
+        width: 100%;
+        border-radius: 50px 50px 0 0;
+    }
+    #impactBanner img {
+        width: 70%;
+        border-radius: 0;
+    }
+    #articleGroupHP, #articleGroup, #articleGroupTwo {
         width: 40%;
+        box-shadow:  9px 9px 18px #191c26,-9px -9px 18px #2b3042;
+             border-radius: 50px;
     }
     #hpDescription, #inkDescription, #impactDescription {
-        background: gray;
-        width: 40%;
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 90%;
         display: grid;
         grid-template-columns: 5% 90% 5%;
+        padding: 2.5% 0;
     }
     #hpDescription button, #inkDescription button, #impactDescription button {
-        width: 25%;
+        width: 30%;
         padding: 5px 10px;
         margin-bottom: 14px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        transition-duration: 0.4s;
         border: none;
+        background: linear-gradient(145deg, #1f222f, #242938);
+        box-shadow:  6px 6px 10px #191c26, -6px -6px 10px #2b3042;
+        border-radius: 5px;
+        cursor: pointer;
     }
     #hpDescription button a, #inkDescription button a, #impactDescription button a {
         text-decoration: none;
-        color: rgb(52, 52, 77);
-        transition-duration: 0.4s;
-    }
-    #hpDescription button a:hover, #inkDescription button a:hover, #impactDescription button a:hover {
-        text-decoration: none;
         color: white;
+        font-family: 'PT Sans Narrow', sans-serif;
     }
     #hpDescription button:hover, #inkDescription button:hover, #impactDescription button:hover {
-        background: rgb(52, 52, 77);
+        background: #222634;
+        box-shadow: inset 6px 6px 10px #191c26,
+            inset -6px -6px 10px #2b3042;
         color: white;
     }
 
