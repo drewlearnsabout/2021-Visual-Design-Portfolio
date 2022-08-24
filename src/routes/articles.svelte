@@ -9,7 +9,7 @@
 
 <section id="articleSection">
     <a href="/graphics" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <Nav/>
     <section id="articles">
@@ -75,17 +75,20 @@
     background: #555; 
     }
     #nextPage {
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1.2em;
-    color: white;
-    position: fixed;
-    top: 75%;
-    left: 85%;
-    text-decoration: none;
-    z-index: 99;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #articleSection {
     display: grid;

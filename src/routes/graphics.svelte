@@ -7,7 +7,7 @@
 
 <section style="background-image: url('{bgImage}')" id="graphicsPage">
     <a href="/websites" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <nav><Nav/></nav>
     <section id="graphicsSection">
@@ -19,16 +19,20 @@
 
 <style>
     #nextPage {
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1.2em;
-    color: white;
-    position: fixed;
-    top: 75%;
-    left: 85%;
-    text-decoration: none;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
         #graphicsPage {
             display: grid;

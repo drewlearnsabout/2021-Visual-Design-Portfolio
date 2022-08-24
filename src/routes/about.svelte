@@ -25,7 +25,7 @@
     <Nav/>
     <section>
         <a href="/articles" id="nextPage">
-            Next Page >
+            Next Page
         </a>
         <article id="description">
             <h1>Go beyond with design.</h1>
@@ -174,10 +174,14 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
-#nextPage:hover {
-    text-decoration: underline;
-}
+    #nextPage:hover {
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
+    }
 #aboutPage {
     display: grid;
     background-size: cover;

@@ -7,7 +7,7 @@
 
 <div id="timelinePage">
     <a href="/articles" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <nav><Nav/></nav>
     <section id="timeline">
@@ -157,10 +157,13 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
-        z-index: 3;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #timelinePage {
         display: grid;
@@ -219,7 +222,7 @@
     .dot {
         height: 30px;
         width: 30px;
-        background-color: white;
+        background: rgb(255,255,255);
         border-radius: 50%;
     }
     .rightSection {

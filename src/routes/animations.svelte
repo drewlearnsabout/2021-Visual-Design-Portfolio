@@ -7,7 +7,7 @@
 
 <section  id="animations">
     <a href="/contact" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <Nav/>
     <section id="animationSection">
@@ -34,9 +34,13 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
+        border-radius: 12px;
+        background: #141414 17%;
+        box-shadow:  5px 5px 10px #000000, -5px -5px 13px #202020;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #000000, inset -5px -5px 13px #202020;
     }
     #animations {
         display: grid;
@@ -61,7 +65,7 @@
     }
     #screenArea {
         background: rgb(255,255,255);
-        background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(5,5,5,1) 17%);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 0%, #050505 17%);
         padding: 10px 0;
         display: grid;
     }
