@@ -15,11 +15,11 @@
                 <p>UI/UX Case Studies</p>
             </div>
             <div id="caseStudies">
-                <a href="{hpArticle}" class="cases" id="hpArticle" rel=external>
+                <a href="{hpArticle}" class="cases" id="hpArticle" rel=external target="_blank">
                     <img src="{hp}" alt="">
                     <p>PDF</p>
                 </a>
-                <a href="{awsArticle}" class="cases" id="awsArticle" rel=external>
+                <a href="{awsArticle}" class="cases" id="awsArticle" rel=external target="_blank">
                     <img src="{ink}" alt="">
                     <p>Web Article</p>
                 </a>
