@@ -204,7 +204,7 @@
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         z-index: 2;
-        justify-self: right;
+        justify-self: end;
         align-items: start;
         display: grid;
     }
@@ -314,6 +314,9 @@
         .timelineArticlesRight {
             grid-template-columns: max-content 18% 240px;
             justify-self: end;
+        }
+        #nextPage {
+            font-size: 0.8em;
         }
     }
 </style>

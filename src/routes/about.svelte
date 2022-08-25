@@ -374,6 +374,9 @@ section {
         #websitesText {
             grid-column: 7 / 8;
         }
+        #nextPage {
+            font-size: 0.8em;
+        }
     }
     @media only screen and (max-width: 667px) {
         #animationText {
@@ -387,6 +390,9 @@ section {
         }
         #aboutText {
             grid-column: 6 / 7;
+        }
+        #nextPage {
+            font-size: 0.8em;
         }
     }
 @media (orientation: landscape) {

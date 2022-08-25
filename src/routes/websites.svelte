@@ -101,6 +101,9 @@
         h1 {
             font-size: 2em;
         }
+        #nextPage {
+            font-size: 0.8em;
+        }
     }
 
 </style>

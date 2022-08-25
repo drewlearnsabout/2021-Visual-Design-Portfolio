@@ -86,5 +86,10 @@
             display: initial;
         }
     }
+    @media only screen and (max-width: 1280px) and (max-height: 500px) {
+        #nextPage {
+            font-size: 0.8em;
+        }
+    }
 
 </style>

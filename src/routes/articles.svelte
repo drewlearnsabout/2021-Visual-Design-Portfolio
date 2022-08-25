@@ -182,4 +182,15 @@
     #impactDescription h3, #impactDescription p, #impactDescription button {
         grid-column: 2 / 3;
     }
+    @media only screen and (max-width: 1280px) and (max-height: 500px) {
+        #articleGroupHP, #articleGroup, #articleGroupTwo {
+        width: 55%;
+        }
+        #hpDescription button, #inkDescription button, #impactDescription button {
+        width: 33%;
+        }
+        #nextPage {
+            font-size: 0.8em;
+        }
+    }
 </style>
