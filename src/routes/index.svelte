@@ -36,7 +36,12 @@
         Next Page
     </a>
     <footer>
-        <p>Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.</p>
+        <p>Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.
+        <br>
+        **Under construction**
+        </p>
+        
+        
     </footer>
 </div>
 <div id="landscape"><Landscape/></div>
@@ -45,10 +50,10 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
     footer {
-        width: 100%;
+        max-width: 100vw;
         position: fixed;
         bottom: 3vh;
-        left: 50%;
+        left: 72%;
         font-family: 'Open Sans Condensed', sans-serif;
         color: white;
         animation-delay: 3s;
@@ -94,14 +99,15 @@
     }
     #main {
         width: 80%;
+        height: 80%;
         color: white;
         display: grid;
         justify-self: center;
+        align-self: center;
         grid-template-rows: min-content 35%;
         row-gap:10%;
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: lighter;
-        padding-top: 30px;
     }
     #name {
         width: 40%;
@@ -123,8 +129,8 @@
     #name h1 {
         font-size: 3em;
         font-weight: lighter;
-        padding: 20px 30px;
-        line-height: .9;
+        padding: 0 30px;
+        line-height: 1;
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-delay: 2s;
@@ -163,6 +169,7 @@
     #caseStudies {
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-template-rows: min-content 35%;
         align-items: center;
         column-gap: 45px;
     }
@@ -252,24 +259,35 @@
             font-size: 0.8em;
         }
         #main {
-        width: 90%;
+        max-width: 100%;
+        max-height: 100%;
+        justify-self: center;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content;
         row-gap:5%;
-        padding-top: 15px;
         }
         #name h1 {
-            font-size: 2em;
+            font-size: 1.6em;
         }
         #name {
-        width: 38%;
+            width: 37%;
         }
         #caseStudySection, #nextPage {
-        font-size: 0.8em;
+            font-size: 0.8em;
         }
         #caseStudies {
-        column-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: auto auto auto;
+        }
+        #caseStudies img {
+            width: 100%;
         }
         button {
-            padding: 10px 10px;
+            font-size: 1.3em;
+        }
+        #articlesButton {
+            padding: 10px 20px;
+            margin-top: 30px;
         }
     }
 @media only screen and (max-width: 667px) {
