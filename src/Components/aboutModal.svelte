@@ -63,7 +63,7 @@
 	.modal {
 		font-family: 'PT Sans Narrow', sans-serif;
 		position: absolute;
-		left: 50%;
+		left: 57%;
 		top: 50%;
 		width: calc(100vw - 4em);
 		max-width: 32em;

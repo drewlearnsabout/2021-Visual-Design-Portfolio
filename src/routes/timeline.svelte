@@ -158,19 +158,19 @@
         left: 85%;
         text-decoration: none;
         border-radius: 12px;
-        background: #222634;
+        background: rgba(34, 38, 52, .17);
+        backdrop-filter: blur(1px);
         box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
         padding: 10px 25px;
+        z-index: 5;
     }
     #nextPage:hover {
         box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #timelinePage {
         display: grid;
-        background-size: cover;
         background-color: #222634;
         grid-template-columns: 15% 85%;
-        background-repeat: no-repeat;
         width: 100vw;
         font-family: 'PT Sans Narrow', sans-serif;
         color: white;
@@ -277,6 +277,9 @@
         grid-template-rows: 20px auto;
         justify-content: center;
     }
+    .timelineText:hover {
+        box-shadow:  inset 6px 6px 15px #191c26, inset -6px -6px 10px #2b3042;
+    }
     ul {
             list-style-position: inside;
             margin: 0;
@@ -302,18 +305,25 @@
     }
     @media only screen and (max-width: 1280px) and (max-height: 500px) {
         #timelineSection {
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto min-content auto;
             height: 84.5vh;
+            width: 100%;
+            justify-self: center;
         }
         .timelineArticlesLeft img, .timelineArticlesRight img {
             width: 100%;
         }
         .timelineArticlesLeft {
-            grid-template-columns: 240px 18% auto;
+            grid-template-columns: 25vw auto auto;
+            margin-left: 5%;
         }
         .timelineArticlesRight {
-            grid-template-columns: max-content 18% 240px;
+            grid-template-columns: max-content auto 25vw;
             justify-self: end;
+            margin-right: 5%;
+        }
+        .timelineText {
+            font-size: 1.8vw;
         }
         #nextPage {
             font-size: 0.8em;

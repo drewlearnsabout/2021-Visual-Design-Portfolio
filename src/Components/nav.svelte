@@ -36,7 +36,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
     #timelineSection {
-        visibility: hidden;
+        visibility: initial;
     }
     nav {
         height: 100vh;

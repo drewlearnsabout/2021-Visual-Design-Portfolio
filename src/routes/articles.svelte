@@ -4,6 +4,7 @@
     let hpArticle = 'images/Articles Page/HP UI Case Study.pdf';
     let impactBanner = 'images/Articles Page/Case Study Title.png';
     let hpBanner = 'images/Articles Page/HP Case Study Header.jpg';
+    import Landscape from "../Components/landscapeMode.svelte";
     import Nav from "../Components/nav.svelte";
 </script>
 
@@ -52,6 +53,7 @@
         </section>
     </section>
 </section>
+<div id="landscape"><Landscape/></div>
 
 <style>
     /* Scroll Bar */
@@ -181,6 +183,22 @@
     #inkDescription h3, #inkDescription p, #inkDescription button,
     #impactDescription h3, #impactDescription p, #impactDescription button {
         grid-column: 2 / 3;
+    }
+    @media (orientation: landscape) {
+        #articleSection {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+    @media (orientation: portrait) {
+        #articleSection {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
     }
     @media only screen and (max-width: 1280px) and (max-height: 500px) {
         #articleGroupHP, #articleGroup, #articleGroupTwo {
