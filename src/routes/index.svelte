@@ -36,9 +36,9 @@
         Next Page
     </a>
     <footer>
-        <p>Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.
+        <p>**Under construction**
         <br>
-        **Under construction**
+        Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.
         </p>
         
         
