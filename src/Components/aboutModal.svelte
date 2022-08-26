@@ -46,7 +46,7 @@
 	<slot></slot>
 
 	<!-- svelte-ignore a11y-autofocus -->
-	<button autofocus on:click={close}>Close</button>
+	<button autofocus on:click={close}>X Close</button>
 </div>
 
 <style>
@@ -58,6 +58,7 @@
 		width: 100%;
 		height: 100%;
 		background: rgba(0,0,0,0.3);
+		z-index: 7;
 	}
 
 	.modal {
@@ -65,37 +66,41 @@
 		position: absolute;
 		left: 57%;
 		top: 50%;
-		width: calc(100vw - 4em);
-		max-width: 32em;
+		max-width: 60vw;
 		max-height: calc(100vh - 7em);
-		overflow: auto;
+		overflow-y: auto;
 		transform: translate(-50%,-50%);
 		padding: 1em;
 		border-radius: 0.5em;
 		color: white;
-		backdrop-filter: blur(16px) saturate(180%);
-    	-webkit-backdrop-filter: blur(16px) saturate(180%);
+		backdrop-filter: blur(2px) saturate(180%);
+    	-webkit-backdrop-filter: blur(2px) saturate(180%);
     	background-color: rgba(27, 27, 27, 0.75);
 		border: 1px solid rgba(209, 213, 219, 0.3);
-		z-index: 3;
+		z-index: 8;
 	}
-
 	button {
+		background: #1d1f21;
+		box-shadow:  5px 5px 10px #191a1c,
+             -5px -5px 10px #212426;
+		color: white;
+		margin-top: 4%;
+		padding: 1% 5%;
 		display: block;
 		font-size: 1.2em;
 		font-weight: bold;
 		font-family: 'PT Sans Narrow', sans-serif;
-		border-radius: 200px;
+		border-radius: 12px;
 		border: none;
 		transition-duration: 0.3s;
+		cursor: pointer;
 	}
 	button:hover {
-		box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-		transform: translateY(-1px);
+		box-shadow:  inset 5px 5px 10px #191a1c, inset -5px -5px 10px #212426;
 	}
 	@media only screen and (max-width: 850px) and (max-height: 500px) {
         .modal {
-            top: 65%;
+            top: 50%;
         }
     }
 </style>

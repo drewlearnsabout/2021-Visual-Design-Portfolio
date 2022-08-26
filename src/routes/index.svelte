@@ -12,7 +12,7 @@
     <section id="main">
         <div id="caseStudySection">
             <div>
-                <p>UI/UX Case Studies</p>
+                <p id="caseStudyHeader">UI/UX Case Studies</p>
             </div>
             <div id="caseStudies">
                 <a href="{hpArticle}" class="cases" id="hpArticle" rel=external target="_blank">
@@ -32,7 +32,7 @@
             <a href="/about"><h1>Andrew Carbungco<br><span>Visual Designer</span></h1></a>
         </div>
     </section>
-    <a href="/about" id="nextPage">
+    <a href="/timeline" id="nextPage">
         Next Page
     </a>
     <footer>
@@ -56,9 +56,9 @@
         left: 72%;
         font-family: 'Open Sans Condensed', sans-serif;
         color: white;
-        animation-delay: 3s;
+        animation-delay: 4s;
         animation-name: footerFade;
-        animation-duration: 0.3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
@@ -83,8 +83,8 @@
         box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
         padding: 10px 25px;
         animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-delay: 2s;
+        animation-duration: 1s;
+        animation-delay: 4s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
@@ -109,6 +109,13 @@
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: lighter;
     }
+    #caseStudyHeader {
+        animation-name: fadeIn;
+        animation-duration: 0.3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
     #name {
         width: 40%;
         height: 100%;
@@ -122,7 +129,7 @@
         background: #222634;
         box-shadow:  6px 6px 12px #1d202c, -6px -6px 12px #272c3c;
         animation-name: fadeIn;
-        animation-duration: .5s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
