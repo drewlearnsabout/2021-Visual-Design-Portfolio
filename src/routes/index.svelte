@@ -274,10 +274,10 @@
         row-gap:5%;
         }
         #name h1 {
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
         #name {
-            width: 37%;
+            width: 40%;
         }
         #caseStudySection, #nextPage {
             font-size: 0.8em;

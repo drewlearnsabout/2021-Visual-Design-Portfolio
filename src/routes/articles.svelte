@@ -25,7 +25,7 @@
                     and specification guidelines used to help redesign a remote printing application
                     for HP.
                 </p>
-                <button><a href="{hpArticle}" target="_blank">Read Article</a></button>
+                <button><a href="{hpArticle}" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
         <section id="articleGroup">
@@ -37,7 +37,7 @@
                 <p>This article describes the initial process and the latest progress of designing
                     and implementing an e-commerce site for a collaboration between to organizations. 
                 </p>
-                <button><a href="{awsArticle}" target="_blank">Read Article</a></button>
+                <button><a href="{awsArticle}" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
         <section id="articleGroupTwo">
@@ -48,7 +48,7 @@
                 <h3>Redesigning the Aim High Impact Website</h3>
                 <p>This article describes the initial process of redesigning a website dedicated
                     to outreach for families of children with Autism</p>
-                <button><a href="https://redesign-impact.netlify.app/" target="_blank">Read Article</a></button>
+                <button><a href="https://redesign-impact.netlify.app/" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
     </section>
@@ -159,9 +159,10 @@
     }
     #hpDescription button, #inkDescription button, #impactDescription button {
         width: 30%;
-        padding: 5px 10px;
+        padding: 15px 10px;
         margin-bottom: 14px;
         border: none;
+        justify-self: center;
         background: linear-gradient(145deg, #1f222f, #242938);
         box-shadow:  6px 6px 10px #191c26, -6px -6px 10px #2b3042;
         border-radius: 5px;
@@ -171,12 +172,14 @@
         text-decoration: none;
         color: white;
         font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: bold;
     }
     #hpDescription button:hover, #inkDescription button:hover, #impactDescription button:hover {
         background: #222634;
         box-shadow: inset 6px 6px 10px #191c26,
             inset -6px -6px 10px #2b3042;
         color: white;
+        text-decoration: underline 2px;
     }
 
     #hpDescription h3, #hpDescription p, #hpDescription button,
