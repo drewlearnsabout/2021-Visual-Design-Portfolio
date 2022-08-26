@@ -3,74 +3,74 @@
     let maLogo = "images/AH Department Banners/MA Logo.png";
   </script>
   
-  <div style="background-image: url('{maBanner}')" id="maBanner">
+  <div id="maBanner">
+    <section>
+      <img id="headerImage" src="{maBanner}" alt="">
+    </section>
+    <section id="websiteDescription">
     <img src="{maLogo}" id="maLogo" alt="Aim High Martial Arts logo">
-    <p>Primary goal of website: Increase the traffic to site by revamping and periodically revising design elements.
+    <p>Primary goal of website:
       <br>
+      Increase the traffic to site by revamping and periodically revising design elements.
+      <br><br>
       Tools Used: Figma, Illustrator, Dimension, Photoshop, HTML, CSS, Javascript, Squarespace
     </p>
     <a href="https://www.aimhighma.org/" target="_blank"><button>VISIT SITE</button></a>
+    </section>
   </div>
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
     #maBanner {
-      background-size: stretch;
-      background-repeat: no-repeat;
-      height: 100vh;
+    width: 55%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    border-radius: 50px;
+    box-shadow:  9px 9px 18px #191c26,-9px -9px 18px #2b3042;
+    }
+    #websiteDescription {
       display: grid;
-      grid-template-columns: 20% 60% 20%;
-      grid-template-rows: 10% 25% 15% 10% 30%;
+      grid-template-columns: auto;
+      grid-template-rows: max-content max-content max-content;
+      justify-items: center;
+      column-gap: 5%;
+      padding: 5%;
+    }
+    #headerImage {
+      width: 100%;
+      border-radius: 50px 50px 0 0;
     }
     #maLogo {
-      width: 40em;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
+      width: 15vw;
     }
     #maBanner p {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
       color: white;
     }
     #maBanner a {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    width: 22%;
-    border-radius: 200px;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    transition-duration: 0.2s;
-    display: grid;
-    text-decoration: none;
-    }
-    #maBanner a:hover {
-    width: 20%;
-    transform: translateY(0) translateX(7px);
-    font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      width: 100%;
+      border-radius: 200px;
+      transition-duration: 0.2s;
+      display: grid;
+      text-decoration: none;
     }
     #maBanner a button {
-    border-radius: 200px;
-    border: none;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    color: white;
+      width: 25%;
+      padding: 5px 10px;
+      margin-bottom: 14px;
+      border: none;
+      background: linear-gradient(145deg, #1f222f, #242938);
+      box-shadow:  6px 6px 10px #191c26, -6px -6px 10px #2b3042;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
     }
     #maBanner a button:hover {
-    box-shadow: 0 2px 15px 0 white;
-    background: rgba(255, 255, 255, 0.205);
+      box-shadow:  inset 9px 9px 18px #1b1e29, inset -9px -9px 18px #292e3f;
     }
-    @media only screen and (max-width: 850px) and (max-height: 500px) {
-      #maBanner {
-        grid-template-rows: 20% 25% 40% 10% 20%;
-        background-size: cover;
-      }
-      #maLogo {
-        width: 20em;
-      }
-      #maBanner a {
-        width: 25%;
-      }
-  }
+      @media only screen and (max-width: 850px) and (max-height: 500px) {
+
+    }
   </style>

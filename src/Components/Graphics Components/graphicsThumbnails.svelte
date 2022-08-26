@@ -20,8 +20,6 @@
     let homework = "images/Graphics Page/Homework tablet.png";
     let manual = "images/Graphics Page/MA Manual.png";
     let Woodbreak = "images/Graphics Page/Woodbreak.png";
-    let veterans = "images/Graphics Page/Veterans Post.png";
-    let maInk = "images/Graphics Page/MA Ink Post.png";
 </script>
 
 <section id="graphicsSection">
@@ -45,7 +43,7 @@
             <h2>Banners and Reports</h2>
             <div id="bannerGrid">
                 <img class="bannerReportsClass firstBanners" src="{hiring}" alt="">
-                <div class="bannerReportsClass secondBanners" alt="">
+                <div class="secondBanners" alt="">
                     <img class="bannerReportsClass aimHigh" src="{departments}" alt="">
                     <img class="bannerReportsClass aimHigh" src="{revenue}" alt="">
                 </div>
@@ -62,15 +60,6 @@
                 <img class="threeDClass secondThree" src="{homework}" alt="Homework Icon">
                 <img class="threeDClass thirdThree" src="{manual}" alt="Manual Icon">
                 <img class="threeDClass fourthThree" src="{Woodbreak}" alt="Boardbreaking Icon">
-            </div>
-        </section>
-        <section id="socialMedia">
-            <h2>Social Media and misc. Posts</h2>
-            <div id="socialMediaGrid">
-                <div class="socialOne">
-                    <img src="{veterans}" alt="social media post for veteran's day">
-                    <img src="{maInk}" alt="Aim High Martial Arts and Ink's banner that showcases screen printed shorts">
-                </div> 
             </div>
         </section>
     </section>
@@ -97,9 +86,22 @@
         /* 2D Grid */
         .twoDClass {
             width: 45%;
+            padding: 2%;
+            border-radius: 24px;
+            background: linear-gradient(145deg, #242938, #1f222f);
+            box-shadow:  9px 9px 18px #1b1e29, -9px -9px 18px #292e3f;
+        }
+        .bannerReportsClass {
+            border-radius: 12px;
+            background: #222634;
+            box-shadow:  11px 11px 22px #1d202c, -11px -11px 22px #272c3c;
         }
         .threeDClass {
             width: 8%;
+            border-radius: 100px;
+            background: linear-gradient(145deg, #242938, #1f222f);
+            box-shadow:  9px 9px 18px #1b1e29,
+             -9px -9px 18px #292e3f;
         }
         #twoGrid {
             display: grid;
@@ -129,7 +131,7 @@
             grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
             grid-template-rows: repeat(3, 0.5fr);
             justify-items: center;
-            row-gap: 3vh;
+            row-gap: 5vh;
         }
         .firstBanners {
             grid-column: 2 / 5;
@@ -157,7 +159,8 @@
             grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
             grid-template-rows: repeat(3, 0.5fr);
             justify-items: center;
-            row-gap: 3vh;
+            row-gap: 7vh;
+            padding-bottom: 5%;
         }
         .firstThree {
             grid-column: 2 / 3;
@@ -175,23 +178,4 @@
             grid-column: 3 / 4;
             width: 50%;
         }
-        /* Social Media Grid */
-        #socialMediaGrid {
-            display: grid;
-            grid-template-columns: 1fr 2fr 2fr 1fr;
-            grid-template-rows: repeat(3, 0.5fr);
-            justify-items: center;
-            row-gap: 3vh;
-        }
-        .socialOne {
-            grid-column: 2 / 4;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 5%;
-            justify-content: center;
-        }
-        .socialOne img {
-            width: 90%;
-        }
-
 </style>

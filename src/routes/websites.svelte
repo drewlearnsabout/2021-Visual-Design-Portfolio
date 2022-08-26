@@ -52,6 +52,11 @@
     #websiteSections {
         overflow-y: scroll;
         overflow-x: hidden;
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        row-gap: 8%;
+        padding-bottom: 8%;
     }
     #websiteSections h1 {
         color: white;

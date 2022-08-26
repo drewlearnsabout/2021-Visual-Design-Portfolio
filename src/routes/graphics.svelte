@@ -1,11 +1,10 @@
 <script>
-    let bgImage = "images/Graphics Page/grid.png";
     import Nav from "../Components/nav.svelte";
     import Thumbnails from "../Components/Graphics Components/graphicsThumbnails.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
-<section style="background-image: url('{bgImage}')" id="graphicsPage">
+<section id="graphicsPage">
     <a href="/websites" id="nextPage">
         Next Page
     </a>

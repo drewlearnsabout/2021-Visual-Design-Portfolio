@@ -17,7 +17,7 @@
         <h1>UI/UX</h1>
         <section id="articleGroupHP">
             <a href="{hpArticle}" target="_blank" id="hpBanner">
-                <img src="{hpBanner}" alt="Banner of HP UI Case Study">
+                <img src="{hpBanner}" alt="Bann3dgraphicsbuttoner of HP UI Case Study">
             </a>
             <div id="hpDescription">
                 <h3>Responsive Prototyping and Specs for Remote Printing Application</h3>
@@ -149,7 +149,7 @@
     #articleGroupHP, #articleGroup, #articleGroupTwo {
         width: 40%;
         box-shadow:  9px 9px 18px #191c26,-9px -9px 18px #2b3042;
-             border-radius: 50px;
+        border-radius: 50px;
     }
     #hpDescription, #inkDescription, #impactDescription {
         width: 90%;

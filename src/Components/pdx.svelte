@@ -3,74 +3,75 @@
   let pdxLogo = "images/AH Department Banners/AH PDX Logo_White.png";
 </script>
 
-<div style="background-image: url('{pdxBanner}')" id="pdxBanner">
-  <img src="{pdxLogo}" id="pdxLogo" alt="Aim High PDX logo">
-  <p>Primary goal of website: Increase the local community traffic to site by creating a non-profit company's website.
-    <br>
-    Tools Used: Figma, Illustrator, Dimension, Animate, Photoshop, HTML, CSS, Javascript, Squarespace
-  </p>
-  <a href="https://www.aimhighpdx.org/" target="_blank"><button>VISIT SITE</button></a>
+<div id="pdxBanner">
+  <section>
+    <img id="headerImage" src="{pdxBanner}" alt="">
+  </section>
+  <section id="websiteDescription">
+      <img src="{pdxLogo}" id="pdxLogo" alt="Aim High PDX logo">
+      <p>Primary goal of website:
+        <br>
+        Increase the local community traffic to site by creating a non-profit company's website.
+      <br>
+      <br>
+      Tools Used: Figma, Illustrator, Dimension, Animate, Photoshop, HTML, CSS, Javascript, Squarespace
+      </p>
+      <a href="https://www.aimhighpdx.org/" target="_blank"><button>VISIT SITE</button></a>
+  </section>
 </div>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
   #pdxBanner {
-    background-size: stretch;
-    background-repeat: no-repeat;
-    height: 100vh;
+    width: 55%;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 25% 20% 15% 10% 25%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    border-radius: 50px;
+    box-shadow:  9px 9px 18px #191c26,-9px -9px 18px #2b3042;
+  }
+  #websiteDescription {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content max-content;
+    justify-items: center;
+    column-gap: 5%;
+    padding: 5%;
+  }
+  #headerImage {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
   }
   #pdxLogo {
-    width: 40em;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    width: 15vw;
   }
   #pdxBanner p {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
     color: white;
   }
   #pdxBanner a {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    width: 22%;
+    width: 100%;
     border-radius: 200px;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
     transition-duration: 0.2s;
     display: grid;
     text-decoration: none;
   }
-  #pdxBanner a:hover {
-    width: 20%;
-    transform: translateY(0) translateX(7px);
-    font-weight: bold;
-  }
   #pdxBanner a button {
-    border-radius: 200px;
+    width: 25%;
+    padding: 5px 10px;
+    margin-bottom: 14px;
     border: none;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background: linear-gradient(145deg, #1f222f, #242938);
+    box-shadow:  6px 6px 10px #191c26, -6px -6px 10px #2b3042;
+    border-radius: 5px;
+    cursor: pointer;
     color: white;
   }
   #pdxBanner a button:hover {
-    box-shadow: 0 2px 15px 0 white;
-    background: rgba(255, 255, 255, 0.205);
+    box-shadow:  inset 9px 9px 18px #1b1e29, inset -9px -9px 18px #292e3f;
   }
   @media only screen and (max-width: 850px) and (max-height: 500px) {
-    #pdxBanner {
-      grid-template-rows: 20% 12% 40% 10% 25%;
-      background-size: cover;
-    }
-    #pdxLogo {
-      width: 20em;
-    }
-    #pdxBanner a {
-        width: 25%;
-      }
+
   }
 </style>
