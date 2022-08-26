@@ -29,7 +29,7 @@
             </div>
         </div>
         <div id="name">
-            <a href="/about"><h1>Andrew Carbungco<br><span>Visual Designer</span></h1></a>
+            <a href="/timeline"><h1>Andrew Carbungco<br><span>Visual Designer</span></h1></a>
         </div>
     </section>
     <a href="/timeline" id="nextPage">
