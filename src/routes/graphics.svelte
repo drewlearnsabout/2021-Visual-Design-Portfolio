@@ -1,12 +1,13 @@
 <script>
+    let bgImage = "images/Graphics Page/grid.png";
     import Nav from "../Components/nav.svelte";
     import Thumbnails from "../Components/Graphics Components/graphicsThumbnails.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
 </script>
 
-<section id="graphicsPage">
+<section style="background-image: url('{bgImage}')" id="graphicsPage">
     <a href="/websites" id="nextPage">
-        Next Page
+        Next Page >
     </a>
     <nav><Nav/></nav>
     <section id="graphicsSection">
@@ -18,20 +19,16 @@
 
 <style>
     #nextPage {
-        font-family: 'PT Sans Narrow', sans-serif;
-        font-size: 1.2em;
-        color: white;
-        position: fixed;
-        top: 75%;
-        left: 85%;
-        text-decoration: none;
-        border-radius: 12px;
-        background: #222634;
-        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
-        padding: 10px 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    top: 75%;
+    left: 85%;
+    text-decoration: none;
     }
     #nextPage:hover {
-        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
+        text-decoration: underline;
     }
         #graphicsPage {
             display: grid;
@@ -91,9 +88,4 @@
                 display: initial;
             }
         }
-        @media only screen and (max-width: 850px) and (max-height: 500px) {
-            #nextPage {
-            font-size: 0.8em;
-        }
-    }
 </style>
