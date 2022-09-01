@@ -6,8 +6,8 @@
 </script>
 
 <section  id="animations">
-    <a href="/articles" id="nextPage">
-        Next Page >
+    <a href="/contact" id="nextPage">
+        Next Page
     </a>
     <Nav/>
     <section id="animationSection">
@@ -34,9 +34,13 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
+        border-radius: 12px;
+        background: #141414 17%;
+        box-shadow:  5px 5px 10px #000000, -5px -5px 13px #202020;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #000000, inset -5px -5px 13px #202020;
     }
     #animations {
         display: grid;
@@ -47,7 +51,7 @@
         font-family: 'PT Sans Narrow', sans-serif;
     }
     #animationSection {
-        height: 100vh;
+        height: 100%;
         font-family: 'PT Sans Narrow', sans-serif;
         color: white;
         display: grid;
@@ -60,7 +64,8 @@
         text-align: center;
     }
     #screenArea {
-        background-color: rgb(29, 21, 3);
+        background: rgb(255,255,255);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 0%, #050505 17%);
         padding: 10px 0;
         display: grid;
     }
@@ -79,6 +84,11 @@
         }
         #landscape {
             display: initial;
+        }
+    }
+    @media only screen and (max-width: 1280px) and (max-height: 500px) {
+        #nextPage {
+            font-size: 0.8em;
         }
     }
 

@@ -13,6 +13,10 @@
     <div class="square" id="square12"></div>
     <div class="square" id="square13"></div>
     <div class="square" id="square14"></div>
+    <div class="square" id="square16"></div>
+    <div class="square" id="square17"></div>
+    <div class="square" id="square18"></div>
+    <div class="square" id="square19"></div>
     <div class="square" id="square15"></div>
 </section>
 
@@ -36,7 +40,7 @@
     }
     #blocks {
         display: grid;
-        grid-template-columns: repeat(15, 80px);
+        grid-template-columns: repeat(19, 80px);
         overflow-x: hidden;
     }
     #square1 {
@@ -92,6 +96,22 @@
         animation-duration: 2s;
     }
     #square14 {
+        animation-name: left2;
+        animation-duration: 2s;
+    }
+    #square16 {
+        animation-name: left2;
+        animation-duration: 2s;
+    }
+    #square17 {
+        animation-name: left2;
+        animation-duration: 2s;
+    }
+    #square18 {
+        animation-name: left2;
+        animation-duration: 2s;
+    }
+    #square19 {
         animation-name: left2;
         animation-duration: 2s;
     }

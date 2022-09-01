@@ -9,7 +9,7 @@
 
 <div id="websites">
     <a href="/animations" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <Nav/>
     <section id="websiteSections">
@@ -33,9 +33,13 @@
         top: 75%;
         left: 85%;
         text-decoration: none;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #websites {
     display: grid;
@@ -48,6 +52,11 @@
     #websiteSections {
         overflow-y: scroll;
         overflow-x: hidden;
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        row-gap: 8%;
+        padding-bottom: 8%;
     }
     #websiteSections h1 {
         color: white;
@@ -96,6 +105,9 @@
     @media only screen and (max-width: 850px) and (max-height: 500px) {
         h1 {
             font-size: 2em;
+        }
+        #nextPage {
+            font-size: 0.8em;
         }
     }
 

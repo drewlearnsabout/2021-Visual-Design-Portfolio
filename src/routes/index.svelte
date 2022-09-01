@@ -1,28 +1,61 @@
 <script>
-    let bgImage = "images/Home Page/Space Background.png";
     import Nav from "../Components/nav.svelte";
     import Landscape from "../Components/landscapeMode.svelte";
+    let hp = "images/Home Page/HP Case Study Header.png";
+    let ink = "images/Home Page/Ink Header.png";
+    let awsArticle = "images/Home Page/AWS AH Case Study.pdf";
+    let hpArticle = "images/Home Page/HP UI Case Study.pdf";
 </script>
 
-<div style="background-image: url('{bgImage}')" id="homePage">
+<head>
+    <!-- Hotjar Tracking Code for https://drew-by-design.netlify.app -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3134551,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<div id="homePage">
     <Nav/>
     <section id="main">
-        <div class="stars" id="starOne"></div>
-        <div class="stars" id="starTwo"></div>
-        <div class="stars" id="starThree"></div>
-        <div class="stars" id="starFour"></div>
-        <div class="stars" id="starFive"></div>
-        <div id="name">
-            <h1>Andrew Carbungco</h1>
-            <h2>Visual Designer</h2>
+        <div id="caseStudySection">
+            <div>
+                <p id="caseStudyHeader">UI/UX Case Studies</p>
+            </div>
+            <div id="caseStudies">
+                <a href="{hpArticle}" class="cases" id="hpArticle" rel=external target="_blank">
+                    <img src="{hp}" alt="">
+                    <p>PDF</p>
+                </a>
+                <a href="{awsArticle}" class="cases" id="awsArticle" rel=external target="_blank">
+                    <img src="{ink}" alt="">
+                    <p>Web Article</p>
+                </a>
+                <div>
+                    <a id="articlesButton" href="/articles"><button>More articles</button></a>
+                </div>
+            </div>
         </div>
-        <section id="initialBackground"></section>
+        <div id="name">
+            <a href="/timeline"><h1>Andrew Carbungco<br><span>Visual Designer</span></h1></a>
+        </div>
     </section>
-    <a href="/about" id="nextPage">
-        Next Page >
+    <a href="/timeline" id="nextPage">
+        Next Page
     </a>
     <footer>
-        <p>Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.</p>
+        <p>**Under construction**
+        <br>
+        Website built by Andrew Carbungco using <a href="https://github.com/drewlearnsabout/2021-Visual-Design-Portfolio">Svelte/Sveltkit</a>.
+        </p>
+        
+        
     </footer>
 </div>
 <div id="landscape"><Landscape/></div>
@@ -31,15 +64,15 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
     footer {
-        width: 100%;
+        max-width: 100vw;
         position: fixed;
         bottom: 3vh;
-        left: 50%;
+        left: 72%;
         font-family: 'Open Sans Condensed', sans-serif;
         color: white;
-        animation-delay: 3s;
+        animation-delay: 4s;
         animation-name: footerFade;
-        animation-duration: 0.3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
@@ -52,126 +85,172 @@
         color:rgb(21, 159, 201);
     }
     #nextPage {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'PT Sans Narrow', sans-serif;
         font-size: 1.2em;
         color: white;
         position: fixed;
         top: 75%;
         left: 85%;
         text-decoration: none;
-        animation-delay: 3s;
-        animation-name: footerFade;
-        animation-duration: 0.3s;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 4s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
     #nextPage:hover {
-        text-decoration: underline;
-    }
-    #initialBackground {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #222634;
-        animation-name: backgroundFade;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #homePage {
         display: grid;
-        background-size: cover;
         background-color: #222634;
-        background-repeat: no-repeat;
         width: 100%;
         grid-template-columns: 15% 85%;
     }
     #main {
+        width: 80%;
+        height: 80%;
         color: white;
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-        grid-template-rows: repeat(5, 15%);
-    }
-    h1, h2 {
+        justify-self: center;
+        align-self: center;
+        grid-template-rows: min-content 35%;
+        row-gap:10%;
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: lighter;
     }
+    #caseStudyHeader {
+        animation-name: fadeIn;
+        animation-duration: 0.3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
     #name {
-        grid-column: 2 / 4;
-        grid-row: 4 / 5;
+        width: 40%;
+        max-height: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        z-index: 1;
         display: grid;
-        grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
-        grid-template-rows: 73% 63% 33%;
-        z-index: 2;
-    }
-    h1 {
-        font-size: 3em;
-    }
-    h2 {
-        font-size: 2.3em;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 25px;
+        background: #222634;
+        box-shadow:  6px 6px 12px #1d202c, -6px -6px 12px #272c3c;
+        animation-name: fadeIn;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     #name h1 {
-        grid-column: 2 / 5;
-        grid-row: 1 / 2;
-        opacity: 0;
-        animation-name: fadeLeft;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-        animation-delay: 2.2s;
-    }
-    #name h2 {
-        grid-column: 2 / 5;
-        grid-row: 2 / 3;
-        opacity: 0;
-        animation-name: fadeLeft;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-        animation-delay: 2.3s;
-    }
-    .stars {
-        position: fixed;
-        opacity: 0;
-        background-color: rgb(211, 211, 211);
-        height: 0.7%;
-        width: 0.4%;
-        border-radius: 4px;
-        
-        animation-iteration-count: infinite;
-    }
-    #starOne {
-        top: 20%;
-        left: 80%;
-        animation-name: starFall;
+        font-size: 3em;
+        font-weight: lighter;
+        padding: 0 30px;
+        line-height: 1;
+        animation-name: fadeIn;
         animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
-    #starTwo {
-        top: 17%;
-        left: 70%;
-        animation-name: starFall2;
-        animation-delay: 0.5s;
-        animation-duration: 1.2s;
+    #name:hover {
+        box-shadow:  inset 6px 6px 12px #1d202c, inset -6px -6px 12px #272c3c;
     }
-    #starThree {
-        top: 24%;
-        left: 90%;
-        animation-name: starFall3;
-        animation-delay: 0.2s;
-        animation-duration: 0.8s;
+    #name h1 span {
+        font-size: 0.7em;
     }
-    #starFour {
-        top: 16%;
-        left: 65%;
-        animation-name: starFall4;
-        animation-delay: 0.7s;
-        animation-duration: 1.4s;
+    #name a {
+        color: white;
+        text-decoration: none;
     }
-    #starFive {
-        top: 22%;
-        left: 95%;
-        animation-name: starFall5;
-        animation-delay: 1s;
-        animation-duration: 0.6s;
+    #caseStudySection {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        display: grid;
+        justify-self: start;
+        justify-items: start;
+        font-size: 1.2em;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
+    #caseStudySection p {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    #caseStudies {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: min-content 35%;
+        align-items: center;
+        column-gap: 45px;
+    }
+    .cases {
+        text-align: center;
+        border-radius: 25px;
+        background: #222634;
+        box-shadow:  7px 7px 14px #1d202c, -7px -7px 14px #272c3c;
+        color: white;
+        text-decoration: none;
+    }
+    .cases:hover {
+        box-shadow:  inset 2.5px 5px 10px #1d202c, inset -2.5px -5px 10px #272c3c;
+    }
+    .cases img {
+        border-radius: 25px 25px 0 0;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    button {
+        background: none;
+        border: none;
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.3em;
+        cursor: pointer;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    #articlesButton {
+        background: #222634;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        border-radius: 12px;
+        box-shadow:  0.1px 5px 10px #1d202c, -0.1px -5px 10px #272c3c;
+        padding: 10px 25px;
+        margin-top: 30px;
+    }
+    #articlesButton:hover {
+        box-shadow:  inset 2.5px 5px 10px #1d202c, inset -2.5px -5px 10px #272c3c;
+    }
+    
     @keyframes footerFade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
         0% {
             opacity: 0;
         }
@@ -196,34 +275,48 @@
             display: initial;
         }
     }
+    @media only screen and (min-width: 1100px) and (min-height: 800px) {
+        #name {
+            max-height: 70%;
+        }
+    }
     @media only screen and (max-width: 950px) and (max-height: 500px) {
         footer {
             left: 67%;
             font-size: 0.8em;
         }
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-size: 1.5em;
+        #main {
+        max-width: 100%;
+        max-height: 100%;
+        justify-self: center;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content;
+        row-gap:5%;
         }
         #name h1 {
-        grid-column: 2 / 6;
-        grid-row: 1 / 2;
+            font-size: 1.4em;
         }
-        @keyframes stretchUp3 {
-            0% {
-                transform: scaleX(0) translateX(50%);
-                
-            }
-            80% {
-                transform: scaleX(1.1) translateX(50%);
-            }
-            100% {
-                transform: scaleX(1) translateX(50%);
-            }
+        #name {
+            width: 40%;
         }
-}
+        #caseStudySection, #nextPage {
+            font-size: 0.8em;
+        }
+        #caseStudies {
+            column-gap: 20px;
+            grid-template-columns: auto auto auto;
+        }
+        #caseStudies img {
+            width: 100%;
+        }
+        button {
+            font-size: 1.3em;
+        }
+        #articlesButton {
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+    }
 @media only screen and (max-width: 667px) {
     footer {
             left: 60%;
@@ -232,154 +325,5 @@
         h1 {
             font-size: 1.5em;
         }
-        h2 {
-            font-size: 1.1em;
-        }
-        #name h1 {
-        grid-column: 2 / 6;
-        grid-row: 1 / 2;
-        }
-        @keyframes stretchUp3 {
-            0% {
-                transform: scaleX(0) translateX(50%);
-                
-            }
-            80% {
-                transform: scaleX(1.1) translateX(50%);
-            }
-            100% {
-                transform: scaleX(1) translateX(50%);
-            }
-        }
 }
-@keyframes backgroundFade {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes stretchUp {
-    0% {
-        opacity: 0;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes fadeLeft {
-    0% {
-        transform: translateX(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes fadeRight {
-    0% {
-        transform: translateX(10%);
-        opacity: 0;
-        
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-@keyframes starFall {
-    0% {
-        opacity: 0;
-        top: 20%;
-        left: 80%;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-        top: 70%;
-        left: 40%;
-    }
-}
-@keyframes starFall2 {
-    0% {
-        opacity: 0;
-        top: 17%;
-        left: 70%;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-        top: 50%;
-        left: 40%;
-    }
-}
-@keyframes starFall3 {
-    0% {
-        opacity: 0;
-        top: 24%;
-        left: 90%;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-        top: 78%;
-        left: 35%;
-    }
-}
-@keyframes starFall4 {
-    0% {
-        opacity: 0;
-        top: 16%;
-        left: 65%;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-        top: 80%;
-        left: 48%;
-    }
-}
-@keyframes starFall5 {
-    0% {
-        opacity: 0;
-        top: 22%;
-        left: 95%;
-    }
-    20% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-        top: 60%;
-        left: 5%;
-    }
-}
-    
 </style>

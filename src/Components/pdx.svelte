@@ -51,13 +51,14 @@
   #pdxBanner a {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    width: 30%;
+    width: 25%;
     border-radius: 200px;
     transition-duration: 0.2s;
     display: grid;
     text-decoration: none;
   }
   #pdxBanner a button {
+    font-family: 'Open Sans Condensed', sans-serif;
     width: 100%;
     padding: 15px 10px;
     margin-bottom: 14px;

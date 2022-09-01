@@ -4,19 +4,20 @@
     let hpArticle = 'images/Articles Page/HP UI Case Study.pdf';
     let impactBanner = 'images/Articles Page/Case Study Title.png';
     let hpBanner = 'images/Articles Page/HP Case Study Header.jpg';
+    import Landscape from "../Components/landscapeMode.svelte";
     import Nav from "../Components/nav.svelte";
 </script>
 
 <section id="articleSection">
     <a href="/graphics" id="nextPage">
-        Next Page >
+        Next Page
     </a>
     <Nav/>
     <section id="articles">
         <h1>UI/UX</h1>
         <section id="articleGroupHP">
             <a href="{hpArticle}" target="_blank" id="hpBanner">
-                <img src="{hpBanner}" alt="Banner of HP UI Case Study">
+                <img src="{hpBanner}" alt="Bann3dgraphicsbuttoner of HP UI Case Study">
             </a>
             <div id="hpDescription">
                 <h3>Responsive Prototyping and Specs for Remote Printing Application</h3>
@@ -24,7 +25,7 @@
                     and specification guidelines used to help redesign a remote printing application
                     for HP.
                 </p>
-                <button><a href="{hpArticle}" target="_blank">Read Article</a></button>
+                <button><a href="{hpArticle}" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
         <section id="articleGroup">
@@ -36,7 +37,7 @@
                 <p>This article describes the initial process and the latest progress of designing
                     and implementing an e-commerce site for a collaboration between to organizations. 
                 </p>
-                <button><a href="{awsArticle}" target="_blank">Read Article</a></button>
+                <button><a href="{awsArticle}" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
         <section id="articleGroupTwo">
@@ -47,24 +48,49 @@
                 <h3>Redesigning the Aim High Impact Website</h3>
                 <p>This article describes the initial process of redesigning a website dedicated
                     to outreach for families of children with Autism</p>
-                    <button><a href="https://redesign-impact.netlify.app/" target="_blank">Read Article</a></button>
+                <button><a href="https://redesign-impact.netlify.app/" target="_blank">READ ARTICLE</a></button>
             </div>
         </section>
     </section>
 </section>
+<div id="landscape"><Landscape/></div>
 
 <style>
+    /* Scroll Bar */
+    /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f14f;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192); 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
     #nextPage {
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1.2em;
-    color: white;
-    position: fixed;
-    top: 75%;
-    left: 85%;
-    text-decoration: none;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        position: fixed;
+        top: 75%;
+        left: 85%;
+        text-decoration: none;
+        border-radius: 12px;
+        background: #222634;
+        box-shadow:  5px 5px 10px #1d202c, -5px -5px 10px #272c3c;
+        padding: 10px 25px;
     }
     #nextPage:hover {
-        text-decoration: underline;
+        box-shadow:  inset 5px 5px 10px #1d202c, inset -5px -5px 10px #272c3c;
     }
     #articleSection {
     display: grid;
@@ -87,7 +113,8 @@
         grid-template-rows: auto;
         row-gap: 10vh;
         overflow-y: scroll;
-        height: 100vh;
+        height: 99vh;
+        justify-items: center;
     }
     h1 {
         color: white;
@@ -103,52 +130,88 @@
     }
     #impactBanner {
         background-color: white;
-        width: 40%;
-        padding: 20px 0;
+        width: 100%;
+        border-radius: 50px 50px 0 0;
     }
-    a {
+    #articles a {
         display: grid;
         justify-items: center;
+        width: 100%;
     }
-    a img {
+    #articles a img {
+        width: 100%;
+        border-radius: 50px 50px 0 0;
+    }
+    #impactBanner img {
+        width: 70%;
+        border-radius: 0;
+    }
+    #articleGroupHP, #articleGroup, #articleGroupTwo {
         width: 40%;
+        box-shadow:  9px 9px 18px #191c26,-9px -9px 18px #2b3042;
+        border-radius: 50px;
     }
     #hpDescription, #inkDescription, #impactDescription {
-        background: gray;
-        width: 40%;
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 90%;
         display: grid;
         grid-template-columns: 5% 90% 5%;
+        padding: 2.5% 0;
     }
     #hpDescription button, #inkDescription button, #impactDescription button {
-        width: 25%;
-        padding: 5px 10px;
+        width: 30%;
+        padding: 15px 10px;
         margin-bottom: 14px;
-        font-family: 'PT Sans Narrow', sans-serif;
-        transition-duration: 0.4s;
         border: none;
+        justify-self: center;
+        background: linear-gradient(145deg, #1f222f, #242938);
+        box-shadow:  6px 6px 10px #191c26, -6px -6px 10px #2b3042;
+        border-radius: 5px;
+        cursor: pointer;
     }
     #hpDescription button a, #inkDescription button a, #impactDescription button a {
         text-decoration: none;
-        color: rgb(52, 52, 77);
-        transition-duration: 0.4s;
-    }
-    #hpDescription button a:hover, #inkDescription button a:hover, #impactDescription button a:hover {
-        text-decoration: none;
         color: white;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: bold;
     }
     #hpDescription button:hover, #inkDescription button:hover, #impactDescription button:hover {
-        background: rgb(52, 52, 77);
+        background: #222634;
+        box-shadow: inset 6px 6px 10px #191c26,
+            inset -6px -6px 10px #2b3042;
         color: white;
+        text-decoration: underline 2px;
     }
 
     #hpDescription h3, #hpDescription p, #hpDescription button,
     #inkDescription h3, #inkDescription p, #inkDescription button,
     #impactDescription h3, #impactDescription p, #impactDescription button {
         grid-column: 2 / 3;
+    }
+    @media (orientation: landscape) {
+        #articleSection {
+            display: grid;
+        }
+        #landscape {
+            display: none;
+        }
+    }
+    @media (orientation: portrait) {
+        #articleSection {
+            display: none;
+        }
+        #landscape {
+            display: initial;
+        }
+    }
+    @media only screen and (max-width: 1280px) and (max-height: 500px) {
+        #articleGroupHP, #articleGroup, #articleGroupTwo {
+        width: 55%;
+        }
+        #hpDescription button, #inkDescription button, #impactDescription button {
+        width: 33%;
+        }
+        #nextPage {
+            font-size: 0.8em;
+        }
     }
 </style>
